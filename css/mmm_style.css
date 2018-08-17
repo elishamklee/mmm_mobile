@@ -418,16 +418,20 @@ html, body {
 }
 
 body {
-  font-family: 'Muli',Helvetica,Arial,Verdana,"Geneva", sans-serif ;
+  font-family: 'avenir-next',Helvetica,Arial,Verdana,"Geneva", sans-serif ;
   font-weight: 300;
   font-size: 14px;
   font-size: 0.875em;
   color: #fff;
-  background: #A20000;
+  /*background: #A20000;*/
+  background: #fff;
   max-width: 375px;
   max-height: 667px;
   float: none;
   margin:auto;
+}
+header, nav {
+  background: #A20000;
 }
 
 input,
@@ -463,9 +467,6 @@ img {
 }
 ul li {
   list-style: none;
-}
-input, textarea {
-  border:1px solid #ddd !important;
 }
 
 /* ============================== */
@@ -534,7 +535,14 @@ div[class*="col_"] {
 .col_s_10_of_10 {
   width: 100%;
 }
-
+.ws_100 {
+  width: 100%;
+}
+.col_5 > div{
+  width: 20%;
+  display: block;
+  float: left;
+}
 /* ============================== */
 /* UI Code                        */
 /*================================*/
@@ -559,9 +567,10 @@ div[class*="col_"] {
 /* Position Code*/
 .p_absolute {
   position: absolute;
+  z-index: 1;
 }
-.p_high {
-  z-index: 9999999;
+.p_high_9 {
+  z-index: 9;
 }
 .p_rt {
   right: 10px;
@@ -572,6 +581,9 @@ div[class*="col_"] {
 }
 .p_fixed {
   position: fixed;
+}
+.pf_bottom {
+  bottom: 27px;
 }
 .fr {
   float: right !important;
@@ -634,10 +646,22 @@ div[class*="col_"] {
 .bg_black {
   background: #222;
 }
+.bg_red {
+  background: #A20000;
+}
 
 /* Space Code*/
+.pl_5 {
+  padding-left:5px;
+}
+.pr_5 {
+  padding-right:5px;
+}
 .pa_10 {
   padding:10px;
+}
+.pt_15 {
+  padding-top: 15px;
 }
 .pa_20 {
   padding:20px;
@@ -648,7 +672,12 @@ div[class*="col_"] {
 .pt_40 {
   padding: 40px 0 0 0;
 }
-
+.ppt_10 {
+  padding-top: 10%;
+}
+.ppt_30 {
+  padding-top: 30%;
+}
 
 /* Shape Code*/
 .round {
@@ -680,3 +709,138 @@ div[class*="col_"] {
   font-size: 12px;
   font-weight: 600;
 }
+
+.scan_id_back {
+  background: url("../img/license_back.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.scan_id_front {
+  background: url("../img/license_front.png") no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+/* ============================== */
+/* Button Code                    */
+/*================================*/
+button {
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .4px;
+  border-radius: 50px;
+  border:0;
+}
+.button_space {
+  width: 15px;
+}
+
+/* ============================== */
+/* Process Nav Code               */
+/*================================*/
+
+nav {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 0 5px 20px 5px;
+  position: relative;
+}
+.done:after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid #FF5F5F;
+  width: 48px;
+  left: 25px;
+  top: 12px;
+  z-index: 2;
+}
+nav:after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid #550505;
+  width: 80%;
+  left: 10%;
+  top: 18%;
+  z-index: 1;
+}
+nav .circle {
+  width: 26px;
+  height: 26px;
+  background: #550505;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 220%;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 7px;
+  z-index: 999;
+  position: relative;
+}
+.circle.active {
+  background: #FF5F5F;
+}
+.contents_cap {
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  height: 20px;
+}
+
+
+
+/* ============================== */
+/* From Code                      */
+/*================================*/
+.form{
+  padding: 0 20px;
+}
+.form > div {
+  width: 100%;
+}
+.label {
+  font-size: 10px;
+  color:#7C7C7C;
+}
+.form_icon {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.form_icon.left {
+  right: 8px;
+}
+.col_2 > div:nth-child(odd) {
+  padding-right: 8px;
+}
+.col_2 > div:nth-child(even) {
+  padding-left: 8px;
+}
+input,button,textarea,select {
+  outline: 0;
+  border:0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-expand: none;
+  -o-expand: none;
+  cursor: pointer;
+  
+}
+input,textarea,select {
+  border-bottom: 1px solid #CCCCCC;
+  color: #222;
+  height: 35px;
+  color: #A20000;
+  width: 100%;
+  background: #fff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+
