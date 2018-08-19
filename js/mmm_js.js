@@ -1,6 +1,7 @@
 
 $(function(){
 
+	/* Calendar */
 	$('#icon_calendar').click(function(){
 		$('.calendar').addClass('open');
 	});
@@ -9,6 +10,29 @@ $(function(){
 		$('.calendar').removeClass('open');
 	});
 
+	/* Marketing Question */
+	$('#marketing').click(function(){
+		$('.dropdown').addClass('open');
+	});
+
+	$('.icon_close, .dropdown li').click(function(){
+		$('.dropdown').removeClass('open');
+		$('.answer').css('display','block');
+	});
+
+	$('.clear_content').click(function(){
+		$('.answer').css('display','none');
+	})
+
+
+	/* Group Type */
+	$('.employee_id input:checkbox').click(function(){
+		$('.employee_id .hide').slideToggle();
+	})
+
+	$('.veteran_id input:checkbox').click(function(){
+		$('.veteran_id .hide').slideToggle();
+	})
 
 	/* Mobile Left Menu */
 	$('.icon_menu').click(function(){
@@ -32,7 +56,7 @@ $(function(){
 
 	/* Right Slider */
 	$('.icon_search').click(function(){
-		$('.right_slider').addClass('open');
+		$('#search.right_slider').addClass('open');
 	});
 	$('.right_slider_close').click(function(){
 		$('.right_slider').removeClass('open');
@@ -69,7 +93,87 @@ $(function(){
 	    });
 	});
 
+	/* Account Type */
+	$('#medical input:radio').click(function(){
+		$(this).parent().siblings().slideToggle();
+		$('#caregiver .doclist').css('display','none');
+		$('#caregiver input:radio').prop('checked', false);
+	});
+	$('#caregiver input:radio').click(function(){
+		$(this).parent().siblings().slideToggle();
+		$('#medical .doclist').css('display','none');
+		$('#medical input:radio').prop('checked', false);
+	});
+	$('.doclist input:checkbox').click(function(){
+		$('#CTA_Next').addClass('hide');
+		$('#CTA_Scan').removeClass('hide');
+	})
+	
+	/* Cancel Modal */
+	$('#CTA_Cancel').click(function(){
+		$('.modal_bg').addClass('open');
+		$('.modal_popup').addClass('open');
+	})
+	$('#no').click(function(){
+		$('.modal_bg').removeClass('open');
+		$('.modal_popup').removeClass('open');
+	})
 
+	/* Set Time */
+
+	$(function() {
+    // setTimeout() function will be fired after page is loaded
+    // it will wait for 5 sec. and then will fire
+    // $("#successMessage").hide() function
+	    setTimeout(function() {
+	        $(".modal_popup, .modal_bg").removeClass('open', {}, 300)
+	    }, 3000);
+	});
+
+	/* POS */
+	$('#view_orderhistory').click(function(){
+		$('#order_history.right_slider').addClass('open');
+	});
+	$('.view_detail').click(function(){
+		$('#order_detail.right_slider').addClass('open');
+	});
+
+	$('.right_slider .gotoback').click(function(){
+		$('#order_detail.right_slider').removeClass('open');
+	})
+
+
+
+
+
+	/* Broswer Full Size */
+	//
+	// A helper function to toggle a help tip
+	// about how to hide Safari address bar when it's visible
+	// Monitors only landscape mode and works on Safari on iOS 8+
+	//
+	var attachMobileSafariAddressBarHelpTip = function (target) {
+	    var $target = $(target);
+	    $target.tooltip({
+	        title: 'Scroll up to hide Safari address bar',
+	        trigger: 'manual',
+	        placement: 'bottom'
+	    });
+	    $(window).on('resize', function () {
+	        var bodyHeight = document.body.offsetHeight;
+	        var windowHeight = window.innerHeight;
+	        var isLandscape = Math.abs(window.orientation) === 90;
+	        var showTooltip = (windowHeight < bodyHeight);
+	        if(!isLandscape) return;
+	        $target.tooltip(showTooltip ? 'show' : 'hide');
+	    });
+	}
+	var ua = window.navigator.userAgent;
+	if(ua.indexOf('iPhone') !== -1 && ua.indexOf('Safari') !== -1) {
+	    attachMobileSafariAddressBarHelpTip('#main-nav');
+	}
+
+/* Forever */
 	/* Mobile Slide Menu */
 	$(".icon_menu").on("click",function() {
 		$("body, .c_container, .mobile_overlay, .l_container, .signup_wrapper").addClass("open");
