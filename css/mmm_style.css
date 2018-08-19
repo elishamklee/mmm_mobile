@@ -451,7 +451,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -webkit-font-smoothing: subpixel-antialiased;
   /*-moz-osx-font-smoothing: grayscale;*/
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -536,6 +536,9 @@ ul li {
   height: 100%;
   vertical-align: middle;
 }
+.scrolling {
+  overflow-y: auto;
+}
 div[class*="col_"] {
   float: left;
   position: relative;
@@ -599,7 +602,9 @@ div[class*="col_"] {
 .vb {
   vertical-align: bottom;
 }
-
+.uppercase {
+  text-transform: uppercase
+}
 /* Position Code*/
 .p_absolute {
   position: absolute;
@@ -624,6 +629,15 @@ div[class*="col_"] {
 .pf_bottom {
   bottom: 27px;
   left:0;
+  padding-top: 60px;
+  position: absolute;
+}
+.p_bottom {
+  background-color: white;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 12%, rgba(255,255,255,0.9) 34%, rgba(255,255,255,0.96) 57%, #fff 73%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 12%, rgba(255,255,255,0.9) 34%, rgba(255,255,255,0.96) 57%, #fff 73%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 12%, rgba(255,255,255,0.9) 34%, rgba(255,255,255,0.96) 57%, #fff 73%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 .fr {
   float: right !important;
@@ -635,7 +649,9 @@ div[class*="col_"] {
   float: none !important;
   margin: auto;
 }
-
+.hide, .warning {
+  display: none;
+}
 /* Text Code*/
 .txl{
   text-align: left;
@@ -667,8 +683,14 @@ div[class*="col_"] {
 .ls_4 {
   letter-spacing: 4px;
 }
-.lh_calender {
+.lh_calender, .lh_dropdown, .lh_400 {
   line-height: 400%;
+}
+.lh_200 {
+  line-height: 200%;
+}
+.lh_normal {
+  line-height: auto !important;
 }
 /* Font & Text Color */
 .t_white {
@@ -698,10 +720,16 @@ div[class*="col_"] {
   background: #A20000;
 }
 .bg_lightgray {
-  background: #F4F4F4;
+  background: #F4F4F4 !important;
 }
 .bg_gray {
   background: #aaa;
+}
+.bg_pink {
+  background: #FF5F5F;
+}
+.bg_orange {
+  background: #FF9F00;
 }
 /* Border Code*/
 .bt_gray {
@@ -716,9 +744,15 @@ div[class*="col_"] {
 .bb_black {
   border-bottom: 1px solid #222;
 }
+.bb2_black {
+  border-bottom: 2px solid #222;
+}
 /* Space Code*/
 .pt_0 {
   padding-top: 0 !important;
+}
+.pt_3 {
+  padding-top: 3px;
 }
 .pl_5 {
   padding-left:5px;
@@ -735,8 +769,14 @@ div[class*="col_"] {
 .pa_10 {
   padding:10px;
 }
+.pl_10 {
+  padding-left: 10px;
+}
 .pb_10 {
   padding-bottom: 10px;
+}
+.pr_10 {
+  padding-right: 10px;
 }
 .pt_10 {
   padding-top: 10px;
@@ -746,6 +786,9 @@ div[class*="col_"] {
 }
 .pb_15 {
   padding-bottom: 15px;
+}
+.pr_15 {
+  padding-right: 15px;
 }
 .pa_20 {
   padding:20px;
@@ -762,6 +805,9 @@ div[class*="col_"] {
 .pt_20 {
   padding-top: 20px;
 }
+.pb_30 {
+  padding-bottom: 30px;
+}
 .pt_40 {
   padding: 40px 0 0 0;
 }
@@ -776,7 +822,41 @@ div[class*="col_"] {
 .round {
   border-radius: 50%;
 }
-
+/* ============================== */
+/* Sign In Code                   */
+/*================================*/
+.signin_wrapper {
+  padding-top: 49.5%;
+}
+.signin {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.signin input {
+  background: #fff;
+  color:#222;
+  border-radius: 50px;
+  height: 40px;
+  margin-bottom: 15px;
+  text-indent: 20px;
+}
+.signin input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-size: inherit;
+}
+.signin input::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  font-size: inherit;
+}
+.signin input:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+  font-size: inherit;
+}
+.signin input:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  font-size: inherit;
+}
 /* ============================== */
 /* Scan Code                      */
 /*================================*/
@@ -796,6 +876,7 @@ div[class*="col_"] {
   top: 7px;
   left: 7px;
 }
+
 .scan_text {
   text-align: center;
   top: 35%;
@@ -838,7 +919,7 @@ nav.process {
   width: 100%;
   display: block;
   float: left;
-  padding: 0 5px 20px 5px;
+  padding: 0 5px 15px 5px;
   position: relative;
 }
 .done:after {
@@ -881,9 +962,29 @@ nav .circle {
   border-radius: 10px 10px 0 0;
   height: 20px;
 }
+.contents_cap.with_view {
+  height: 10px !important;
+}
+.view_by select {
+  border: 0 !important;
+  background: transparent !important; 
+  height: auto !important;
+  width: auto !important;
+  text-align: right;
+}
+.view_by option {
+  text-align: right;
+}
 
-
-
+.view_by .form:after {
+  content: '';
+  position: absolute;
+  background: url('../img/arrow_dropdown.svg') no-repeat right center;
+  width: 12px;
+  height: 7px;
+  right: 0;
+  top: 8px;
+}
 /* ============================== */
 /* From Code                      */
 /*================================*/
@@ -904,6 +1005,10 @@ nav .circle {
 }
 .form_icon.left {
   right: 8px;
+}
+.col_2 > div {
+  width: 50%;
+  float: left;
 }
 .col_2 > div:nth-child(odd) {
   padding-right: 8px;
@@ -1000,28 +1105,61 @@ input,textarea,select {
 .height {
   height:40px;
 }
+
+input[type="radio"] {
+  background: url('../img/swipe_inactive.svg') no-repeat left center;
+  width: 51px;
+  height: 32px;
+  border:0 !important;
+}
+
+input[type="radio"]:checked {
+  background: url('../img/swipe_active.svg') no-repeat left center;
+  width: 51px;
+  height: 32px;
+}
+
+input[type="checkbox"] {
+  border: 0 !important;
+  width: 25px !important;
+  height: 19px;
+  background: url('../img/checkbox_inactive.svg') no-repeat left;
+  vertical-align: middle;
+}
+input[type="checkbox"]:checked {
+  background: url('../img/checkbox_active.svg') no-repeat left;
+}
 /* ============================== */
 /* Calnedar Code                  */
 /*================================*/
-.calendar {
+.calendar, .dropdown {
   position: absolute;
   border-top: 1px solid #ddd;
   width: 100%;
   color: #222;
   bottom: -355px;
-  z-index: 99;
+  z-index: 99999;
   max-width: 375px;
   transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
   -ms-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
+  visibility: hidden;
 }
 span[id^="icon_"] {
   cursor: pointer;
 }
-.calendar.open {
+
+.icon_close img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+.calendar.open, .dropdown.open {
   bottom: 0px;
+  visibility: visible;
 }
 .no_line select {
   background: transparent !important;
@@ -1035,7 +1173,7 @@ span[id^="icon_"] {
   background: #A20000;
   border-radius: 50%;
   left: 12px;
-  top: 9px;
+  top: 8px;
   z-index: 1;
 }
 table {
@@ -1045,7 +1183,7 @@ table {
 }
 
 /* ============================== */
-/* Global Menu Code               */
+/* Modal Popup Code               */
 /*================================*/
 .modal_bg {
   visibility: hidden;
@@ -1066,7 +1204,7 @@ table {
   -ms-trnsition: all .25s ease-in-out;
   -o-trnsition: all .25s ease-in-out;
 }
-.modal_bg.open {
+.modal_bg.open, .modal_popup.open {
   visibility: visible;
   position: fixed;
   opacity: 1;
@@ -1078,6 +1216,58 @@ table {
   -o-transfor: translate(0,0);
   cursor: pointer;
 }
+.modal_popup {
+  visibility: hidden;
+  position: absolute;
+  z-index: 999999;
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+}
+
+.modal_popup > div > div {
+  display: table;
+  width: 100%;
+  padding: 0 30px;
+  position: relative;
+}
+.modal_popup > div, .modal_popup > div > div > div {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.modal_popup .scan_inside {
+  border: 5px solid #FF9F00 !important;
+}
+.modal_popup .scan_inside img {
+  margin-top: -5px;
+}
+.modal_popup .cta {
+  display: table;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+.modal_popup .cta span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 85%;
+}
+.modal_popup .dot {
+  position: absolute;
+  z-index: 9999;
+  top: 44%;
+  right: -10px;
+}
+.modal_popup .dot.right {
+  right: auto;
+  left: -10px;
+}
+/* ============================== */
+/* Global Menu Code               */
+/*================================*/
 .location {
   margin:5px 0 0 0;
   border-radius: 50px;
@@ -1115,9 +1305,12 @@ table {
 }
 .right_slider_close {
   top: 20px;
-  right: 20px;
+  right: -20px;
   position: fixed;
   z-index: 999999;
+}
+.open .right_slider_close {
+  right: 20px;
 }
 .left_slider.open {
   overflow-x: hidden;
@@ -1139,6 +1332,7 @@ table {
   background: #fff;
   width: 85%;
   height: 100%;
+  opacity: 0;
   padding-bottom: 50px;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
@@ -1236,7 +1430,7 @@ table {
   background: #fff;
   height: 100%;
   padding-bottom: 2em;
-  right: -90%;
+  right: -100%;
   z-index: 999999;
   transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
@@ -1295,4 +1489,183 @@ button.bigsize {
   float: left;
   display: inline-block;
   text-align: center;
+}
+
+
+/* ============================== */
+/* CS Queue Code                  */
+/*================================*/
+.queue .selected:before {
+  content: '';
+  position: absolute;
+  background: #A20000;
+  width: 8px;
+  height: 89px;
+  top: 0;
+  left:0;
+}
+.queue > div {
+  height: 90px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.icon_new {
+  color: #fff;
+  font-size: 8px;
+  width: 37px;
+  height: 18px;
+  background: #A20000;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 230%;
+  vertical-align: top;
+}
+.acc_tag {
+  border-radius: 5px;
+  line-height: 200%;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  background: #fff;
+  border:1px solid #222;
+  margin-right: 5px;
+  font-size: 10px;
+}
+.queue .cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 11px;
+  clear: both;
+  color: #fff;
+}
+.queue .cta > span {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.queue .cta > span > span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 10px;
+}
+.queue .cta:last-child {
+  margin-left: 10px;
+}
+
+span[class^="outline_"] {
+  width: 90px;
+  height: 24px;
+  border-radius: 50px;
+  border:1px solid #ddd;
+  font-size: 9px;
+  line-height: 235%;
+}
+.outline_date {
+  background: url('../img/icon_date.svg') no-repeat 10px center;
+}
+.outline_time {
+  width: 82px !important;
+  background: url('../img/icon_clock_gray.svg') no-repeat 10px center;
+}
+span[class^="outline_"] > span {
+  padding-left: 25px;
+}
+.gotoback {
+  padding-top: 3px;
+}
+.acc_type {
+  padding: 3px 20px;
+  border-radius: 5px;
+  background: #fff;
+  color:#222;
+  font-size: 10px;
+  display: inline-block;
+  margin-top: 8px;
+  position: relative;
+}
+.acc_type:before {
+  content: '';
+  position: absolute;
+  top:-7px;
+  left:43%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 7px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* ============================== */
+/* POS Code                       */
+/*================================*/
+.pos .p_item {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+}
+.pos .p_item img {
+  width: 60px;
+  border: 5px solid #fff;
+}
+.item_circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 999;
+  top:0;
+  left:0;
+  width: 60px;
+  height: 60px;
+}
+.indica_domi {
+  border:2px solid #00a8e1;
+}
+.sativa {
+  border: 2px solid #ffb819;
+}
+.other {
+  border: 2px solid #A20000;
+}
+.qty {
+  width: 22px;
+  height: 22px;
+  line-height: 230%;
+  font-size: 10px;
+  color: #fff;
+  background: #FF9F00;
+}
+.price {
+  width: 65px;
+}
+.original_p {
+  font-size: 14px;
+}
+.summary {
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+  color:#222;
+  line-height: 200%;
+}
+.summary table {
+  width: 100%;
+}
+.discount {
+  border-top:1px dashed #979797;
+  border-bottom:1px dashed #979797;
+  margin: 10px 0;
+}
+.discount td {
+  padding: 10px 0;
+  color:#A20000;
+}
+.total {
+  margin-top: 10px;
+}
+.total td {
+  border-top:1px solid #ddd;
+  padding-top: 10px;
 }
