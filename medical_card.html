@@ -93,7 +93,7 @@
 					<div><a href="scan_loading.html"><span class="cta bg_pink fr"><span>Yes</span></span><span class="dot right"><img src="img/dot_double.svg"></span></a></div>
 				</div>
 			</div>
-			<span class="modal_popup_bg"></span>
+			<span class="modal_bg"></span>
 		</div>
 		<!-- Cancel Popup E -->
 
@@ -139,12 +139,23 @@
 			</div>
 			<nav class="col_5 clearfix process">
 				<div class="txc"><a href="registration1.html"><span class="circle active done">1</span><span class="ws_100 t_small t_white">Scan ID</span></a></div>
-				<div class="txc"><span class="circle active">2</span><span class="ws_100 t_small t_white">Personal</span></div>
-				<div class="txc"><span class="circle">3</span><span class="ws_100 t_small t_white">Marketing</span></div>
-				<div class="txc"><span class="circle">4</span><span class="ws_100 t_small t_white">Group</span></div>
-				<div class="txc"><span class="circle">5</span><span class="ws_100 t_small t_white">Account</span></div>
+				<div class="txc"><a href="registration2.html"><span class="circle active done">2</span><span class="ws_100 t_small t_white">Personal</span></a></div>
+				<div class="txc"><a href="registration3.html"><span class="circle active done">3</span><span class="ws_100 t_small t_white">Marketing</span></a></div>
+				<div class="txc"><a href="registration4.html"><span class="circle active done">4</span><span class="ws_100 t_small t_white">Group</span></a></div>
+				<div class="txc"><span class="circle active">5</span><span class="ws_100 t_small t_white">Account</span></div>
 			</nav>
 			<div class="ws_100 contents_cap clearfix"></div>
+			<!-- Zoom S -->
+			<div class="zoom" id="zoomid_passport">
+				<span class="close_zoom"><img src="img/icon_close_red.svg"></span>
+				<div class="table">
+					<div class="table_cell txc">
+						<p><img src="img/medical_card.svg" style="width: 260px;"></p>
+					</div>
+				</div>
+				<div class="modal_popup_bg"></div>
+			</div>
+			<!-- Zoom E -->
 		</header>
 		<main>
 			<!-- Calendar S -->
@@ -225,84 +236,33 @@
 			</div>
 			<!-- Calendar E -->
 			<div class="container clearfix">
-				<!-- Profile S -->
+				<!-- Account S -->
 				<div class="wrapper form">
-					<div class="col_2">
+					<div class="col_s_10_of_10 p_relative pb_10 bb_black">
+						<span class="fl t_bold pt_5">Scan Document</span>
+						<span class="fr pt_5 t_bold"><img src="img/icon_add.svg"><span class="t_red t_small pl_5">Scan Additional Document</span></span>
+					</div>
+					<!-- ID S -->
+					<div class="col_2 pb_30 pt_20">
 						<div class="col_s_5_of_10">
-							<span class="label">CA Driver Lisence # <span class="t_red">*</span></span><input type="text" value="B2201793">
-						</div>
-						<div class="col_s_5_of_10">
-							<span class="fr p_absolute form_icon" id="icon_calendar"><img src="img/icon_calendar.svg"></span>
-							<span class="label">Expiration Date <span class="t_red">*</span></span><input type="text" value="06/26/2022">
-						</div>
-					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">First Name <span class="t_red">*</span></span><input type="text" value="Phillip">
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Last Name <span class="t_red">*</span></span><input type="text" value="Christian">
-						</div>
-					</div>
-					<div class="col_s_10_of_10 pt_15">
-						<span class="label">Address <span class="t_red">*</span></span><input type="text" value="5880 Jefferson Blvd">
-					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Apt/Suite/Floor</span><input type="text" value="N/A">
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">City <span class="t_red">*</span></span><input type="text" value="Los Angeles">
-						</div>
-					</div>
-
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">State</span>
-								<select>
-									<option>Select</option>
-									<option>Alabama</option>\
-									<option>Alabama</option>
-									<option>Alaska</option>
-									<option>Arkansas</option>
-									<option selected>California</option>
-									<option>Colorado</option>
-									<option>Connecticut</option>
-									<option>Delaware</option>
-									<option>Florida</option>
-									<option>Georgia</option>
-									<option>Hawaii</option>
-								</select>
-							<span class="fr p_absolute form_icon left"><img src="img/arrow_dropdown.svg"></span>
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<div class="col_s_5_of_10 pr_5">
-								<span class="label">Zip Code <span class="t_red">*</span></span><input type="text" value="90031">
+							<div class="ws_100 clearfix">
+								<span class="label">Medical Card # <span class="t_red">*</span></span><input type="text" value="A565464">
 							</div>
-							<div class="col_s_5_of_10 pl_5">
-								<span class="label">Country</span>
-									<select>
-										<option>USA</option>
-										<option>KOR</option>
-									</select>
-								<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
+							<div class="ws_100 clearfix pt_15">
+								<span class="fr p_absolute form_icon left" id="icon_calendar"><img src="img/icon_calendar.svg"></span>
+								<span class="label">Expiration Date <span class="t_red">*</span></span><input type="text" value="06/26/2022">
 							</div>
 						</div>
-					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="fr p_absolute form_icon left" id="icon_calendar"><img src="img/icon_calendar.svg"></span>
-							<span class="label">Birthday <span class="t_red">*</span></span><input type="text" value="06/26/2022">
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Gender</span><select><option>Male</option></select>
-							<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
+						<div class="col_s_4_of_10 fr" id="passport">
+							<p><img src="img/medical_card.svg"></p>
+							<p class="pt_5 txc" id="zoom"><img src="img/icon_zoom.svg"><span class="t_small pl_5 vm">Zoom</span></p>
 						</div>
 					</div>
+					<!-- ID E -->
 				</div>
-				<!-- Profile E -->
+				<!-- Account E -->
 				<!-- Button S -->
-				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="CTA_Next" onClick="location.href='registration3.html'">Next</button></div>
+				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="Confirm_CTA_Next" onClick="location.href='customer_queue_medical.html'">Next</button></div>
 				<!-- Button E -->
 			</div>
 		</main>

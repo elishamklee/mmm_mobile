@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>MyMedMen</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mmm_js.js"></script>
+		<link rel="stylesheet" href="css/mmm_style.css">
+	</head>
+	<body class="scrolling">
+		<!-- Global Menu S -->
+		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
+		<!-- Hamburger Menu S -->
+		<div id="global_menu" class="left_slider">
+			<div class="pl_20 pr_20 pt_20 pb_10 pr_20 bb_gray">
+				<p class="t_bold t_black t_small"><img src="img/icon_location.svg"><img src="img/space.png" style="width:5px">Current Location</p>
+				<div class="ws_100 bg_lightgray location t_mid">Los Angeles - West Hollywood</div>
+			</div>
+			<div class="col_s_5_of_10 t_black t_bold t_small pl_20 pt_15 pb_15 br_gray">
+				<a href="scan_loading.html"><img src="img/icon_home.svg" class="vt"><img src="img/space.png" style="width:5px">Go to Scan ID</a></div>
+			<div class="col_s_5_of_10 t_black t_bold t_small  pl_20 pt_15 pb_15"><a href="signin.html"><img src="img/icon_signout.svg" class="vt"><img src="img/space.png" style="width:5px">Sign Out</a></div>
+			
+			<nav class="clearfix">
+				<div class="mega_menu expand_p active"><a><span>dispensary</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c open">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="customer_queue_default.html">Customer Queue</a></li>
+										<li><a href="products.html">POS</a></li>
+										<li><a href="doc_directory.html">Doctor Directory</a></li>
+										<li><a href="dispensary_dash.html">Dispensary Dashboard</a></li>
+										<li><a href="dispensary_reports.html">Dispensary Reports</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>inventory</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="store_inventory.html">Store Inventory</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>admin</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="users.html">Users</a></li>
+										<li><a href="location.html">Locations</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+			</nav>
+		</div>
+		<!-- Hamburger Menu E -->
+		<div class="modal_bg"></div>
+		<!-- Global Menu S -->
+
+
+		<!-- Right Slider Search S -->
+		<div class="right_slider" id="search">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">Search</p>
+					<span class="t_mid pt_5 t_thin">Please select the type and enter keyword.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="search pa_20 pt_0 clearfix">
+				<div class="col_3 ws_100 clearfix">
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_customer.svg" class="show"><img src="img/search_customer_red.svg" class="hide"></p>Customer</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold selected"><p class="pt_10 pb_5"><img src="img/search_product.svg" class="show" style="display: none"><img src="img/search_product_red.svg" class="hide" style="display: inline-block;"></p>Product</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_doctor.svg" class="show"><img src="img/search_doctor_red.svg" class="hide"></p>Doctor</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_inventory.svg" class="show"><img src="img/search_inventory_red.svg" class="hide"></p>Inventory</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_transaction.svg" class="show"><img src="img/search_transaction_red.svg" class="hide"></p>Transaction</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_user.svg" class="show"><img src="img/search_user_red.svg" class="hide"></p>User</span></div>
+				</div>
+			</div>
+			<div class="ws_100 pa_20 pt_0 txc">
+				<div class="pa_10 pt_0 search">
+					<input type="text" placeholder="Search keyword">
+				</div>
+				<p class="pt_15 btn_search"><button class="bigsize bg_gray t_white">Search</button></p>
+			</div>
+		</div>
+		<!-- Right Slider Search E -->
+
+
+		<header>
+			<div class="container pa_20">
+				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
+				<span class="col_s_8_of_10 txc t_white">Los Angeles - West Hollywood</span>
+				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
+			</div>
+			<div class="ws_100 contents_cap clearfix bg_lightgray with_view"></div>
+			<div class="ws_100 clearfix bg_lightgray txc pt_5 pb_15 t_black"><a href="#.html">Search for <span class="t_red pr_5 t_bold">"calm"</span><span><img src="img/icon_clear.svg"></span></a></div>
+		</header>
+		<main>
+			<div class="swipe_menu bb_lightgray">
+				<span class="fl clarfix pa_10 pt_15 vb"><img src="img/arrow_back.svg"></span>
+				<div class="swipe_menu_wrapper t_black txc">
+					<div class="active"><span>Flower</span></div>
+					<div><span>Other</span></div>
+					<div><span>Pet</span></div>
+					<div><span>Tropicals</span></div>
+					<div><span>Vaporizer</span></div>
+					<div><span>Acceeories</span></div>
+					<div><span>Clothing</span></div>
+				</div>
+				<span class="fr clarfix pa_10 pt_15 vb"><img src="img/arrow_next.svg"></span>
+			</div>
+			<div class="container clearfix people_list pa_20">
+				<!-- Item List S -->
+				<div class="pos pb_15 bb_gray clearfix">
+					<div class="col_s_2_of_10 vt">
+						<span class="p_item"><span class="item_circle indica_domi"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/1824408246522415_Raw.jpg.344x304_q100.jpg" class="round"></span>
+					</div>
+					<div class="col_s_8_of_10 pl_5">
+						<div class="col_s_7_of_10 pt_5">
+							<p class="t_bold">Northern Emeralds</p>
+							<p class="t_mid pt_5">Emerald OG</p>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<p class="t_gray t_small"><span class="t_red">Calm</span>, Pain Free, Relaxed, Sleepy</p>
+						</div>
+						<div class="ws_100 clearfix pt_15">
+							<div class="swipe_wrapper">
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_red">9</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">3.5g</p>
+											<p class="t_bold t_red pt_3">$50.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_black">20</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">5.5g</p>
+											<p class="t_bold t_red pt_3">$80.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+
+				<!-- Item List S -->
+				<div class="pos pt_15 pb_15 bb_gray clearfix">
+					<div class="col_s_2_of_10 vt">
+						<span class="p_item"><span class="item_circle other"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/3856830763764740_Marketable.jpg.344x304_q100.jpg" class="round"></span>
+					</div>
+					<div class="col_s_8_of_10 pl_5">
+						<div class="col_s_7_of_10 pt_5">
+							<p class="t_bold">Kush Queen</p>
+							<p class="t_mid pt_5">Bath Bomb - Love CBD</p>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<p class="t_gray t_small"><span class="t_red">Calm</span>, Pain Free, Relaxed, Sleepy</p>
+						</div>
+						<div class="ws_100 clearfix pt_15">
+							<div class="swipe_wrapper">
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_red">20</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">25mg</p>
+											<p class="t_bold t_red pt_3">$10.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_black">35</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">50mg</p>
+											<p class="t_bold t_red pt_3">$20.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+
+				<!-- Item List S -->
+				<div class="pos pt_15 pb_15 bb_gray clearfix">
+					<div class="col_s_2_of_10 vt">
+						<span class="p_item"><span class="item_circle sativa"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/3278825100288403_Raw.jpg.344x304_q100.jpg" class="round"></span>
+					</div>
+					<div class="col_s_8_of_10 pl_5">
+						<div class="col_s_7_of_10 pt_5">
+							<p class="t_bold">Lowell Herb Co.</p>
+							<p class="t_mid pt_5">The Exuberant Sativa</p>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<p class="t_gray t_small"><span class="t_red">Calm</span>, Pain Free, Relaxed, Sleepy</p>
+						</div>
+						<div class="ws_100 clearfix pt_15">
+							<div class="swipe_wrapper">
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_red">3</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">7g</p>
+											<p class="t_bold t_red pt_3">$30.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_black">20</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">14g</p>
+											<p class="t_bold t_red pt_3">$60.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_black">20</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">20g</p>
+											<p class="t_bold t_red pt_3">$80.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+								<!-- Price & Inventory S -->
+								<div>
+									<div class="table p_relative">
+										<span class="inventory bg_black">4</span>
+										<div class="table_cell">
+											<p class="t_small t_gray">25g</p>
+											<p class="t_bold t_red pt_3">$100.00</p>
+										</div>
+									</div>
+								</div>
+								<!-- Price & Inventory E -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

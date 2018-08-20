@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="js/mmm_js.js"></script>
 		<link rel="stylesheet" href="css/mmm_style.css">
 	</head>
-	<body>
+	<body class="scrolling">
 		<!-- Global Menu S -->
 		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
 		<!-- Hamburger Menu S -->
@@ -78,24 +78,7 @@
 		<!-- Hamburger Menu E -->
 		<div class="modal_bg"></div>
 		<!-- Global Menu S -->
-		<!-- Cancel Popup S -->
-		<div class="modal_popup" id="cancel_modal">
-			<div>
-				<div class="p_relative clearfix">
-					<div><span class="cta bg_gray" id="no"><span>No</span></span><span class="dot"><img src="img/dot_double.svg"></span></div>
-					<!-- Center S -->
-					<div>
-						<span class="scan round p_relative">
-							<span class="scan_inside round table bg_white"><span class="scan_text t_black p_absoute table_cell t_bold"><p class="pb_5"><img src="img/icon_popup_warning.svg"></p>Do you want to<br>cancel?</span></span>
-						</span>
-					</div>
-					<!-- Center E -->
-					<div><a href="scan_loading.html"><span class="cta bg_pink fr"><span>Yes</span></span><span class="dot right"><img src="img/dot_double.svg"></span></a></div>
-				</div>
-			</div>
-			<span class="modal_popup_bg"></span>
-		</div>
-		<!-- Cancel Popup E -->
+
 
 		<!-- Right Slider Search S -->
 		<div class="right_slider" id="search">
@@ -110,7 +93,7 @@
 			<div class="search pa_20 pt_0 clearfix">
 				<div class="warning_msg txc t_red pb_20 warning"><img src="img/icon_warning_red.svg" class="vm"> <span class="pl_5">Please select the type.</span></div>
 				<div class="col_3 ws_100 clearfix">
-					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_customer.svg" class="show"><img src="img/search_customer_red.svg" class="hide"></p>Customer</span></div>
+					<div class="pb_10 search_select"><span class="search_category t_bold selected"><p class="pt_10 pb_5"><img src="img/search_customer.svg" class="show" style="display: none;"><img src="img/search_customer_red.svg" class="hide" style="display:inline-block;"></p>Customer</span></div>
 
 					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_product.svg" class="show"><img src="img/search_product_red.svg" class="hide"></p>Product</span></div>
 
@@ -131,64 +114,90 @@
 			</div>
 		</div>
 		<!-- Right Slider Search E -->
+
+
 		<header>
 			<div class="container pa_20">
 				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
 				<span class="col_s_8_of_10 txc t_white">Los Angeles - West Hollywood</span>
 				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
 			</div>
-			<nav class="col_5 clearfix process">
-				<div class="txc"><a href="registration1.html"><span class="circle active done">1</span><span class="ws_100 t_small t_white">Scan ID</span></a></div>
-				<div class="txc"><a href="registration2.html"><span class="circle active done">2</span><span class="ws_100 t_small t_white">Personal</span></a></div>
-				<div class="txc"><span class="circle active">3</span><span class="ws_100 t_small t_white">Marketing</span></div>
-				<div class="txc"><span class="circle">4</span><span class="ws_100 t_small t_white">Group</span></div>
-				<div class="txc"><span class="circle">5</span><span class="ws_100 t_small t_white">Account</span></div>
-			</nav>
-			<div class="ws_100 contents_cap clearfix"></div>
+			<div class="ws_100 contents_cap clearfix bg_lightgray with_view"></div>
+			<div class="ws_100 clearfix bg_lightgray txc pt_5 pb_15 t_black"><a href="#.html">Search for <span class="t_red pr_5 t_bold">"michelle"</span><span><img src="img/icon_clear.svg"></span></a></div>
 		</header>
 		<main>
-			<!-- Dropdown S -->
-			<div class="bg_lightgray dropdown clearfix pa_20">
-				<div class="p_relative"><span class="fr vm icon_close"><img src="img/close_black.svg"></span></div>
-				<div class="ws_100 no_line p_relative pb_10 lh_dropdown txc t_gray">
-					<ul>
-						<li class="bb_gray"><span>Newspaper</span></li>
-						<li class="bb_gray"><span>Magazine</span></li>
-						<li class="bb_gray"><span>TV</span></li>
-						<li><span>Social</span></li>
-					</ul>
-				</div>
-			</div>
-			<!-- Dropdown E -->
-			<div class="container clearfix">
-				<!-- Profile S -->
-				<div class="wrapper form">
-					<div class="col_s_10_of_10 red" id="emailaddress">
-						<span class="label">Email Address </span><input type="email" placeholder="Ask for Email Address" class="question">
+			<!-- View By S -->
+			<div class="container clearfix view_by bb_lightgray">
+				<div class="ws_100 clearfix pl_20 pr_20 pt_10 pb_10 t_mid">
+					<div class="col_s_5_of_10 fl vm">
+						<span><img src="img/search_customer_red.svg"></span>
+						<span class="vm pl_5">
+							<p class="uppercase t_small">customer search</p>
+							<p class="t_red t_bold">Total 3</p>
+						</span>
 					</div>
-					<div class="col_s_10_of_10 pt_15 red">
-						<span class="label">Phone Number </span><input type="text" placeholder="Ask for Phone Number" class="question">
-					</div>
-					<div class="col_s_10_of_10 pt_15 red">
-						<span class="label">Notification </span>
-						<div class="ws_100 bb_gray inactive height" id="swipe_check">
-							<div><span class="t_red fl pt_15"><span class="text">Inactive</span></span><span class="swipe vt fr"></span></div>
+					<div class="col_s_5_of_10 fr txr form">
+						<div class="clearfix pr_10">
+							<div class="br_gray clearfix pr_15">
+								<div class="uppercase t_small">view by</div>
+								<select dir="rtl" class="t_bold fr">
+									<option>All</option>
+								</select>
+							</div>
 						</div>
 					</div>
-					<div class="col_s_10_of_10 p_relative pt_20 pb_15 bb_black">
-						<div class="ws_100 clearfix pt_15" id="marketing">
-							<span class="fl t_bold">How did you hear about us?</span>
-							<span class="fr"><img src="img/arrow_dropdown.svg"></span>
-						</div>
-					</div>
-					<div class="answer t_red clearfix pt_15" style="display: none">Newspaper <img src="img/space.png" style="width:5px"><span class="clear_content"><img src="img/icon_clear.svg"></span></div>
-					
 				</div>
-				<!-- Profile E -->
-				<!-- Button S -->
-				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="CTA_Next" onClick="location.href='registration4.html'">Next</button></div>
-				<!-- Button E -->
 			</div>
+			<!-- View By E -->
+			<div class="container clearfix people_list pa_20">
+				<!-- List S -->
+				<div class="p_relative pb_20 clearfix">
+					<div class="col_s_9_of_10 fl vm">
+						<span class="profile_circle vm">
+							<span class="profile_circle_line"></span>
+							<span class="p_relative initial"><img src="img/pic_michelle.svg"></span>
+						</span>
+						<span class="vm pl_10">
+							<p class="t_title t_bold">Michelle Obama</p>
+							<p class="t_small"><span class="t_gray">BIRTHDAY</span> <span class="t_red">03/22/1965</span></p>
+						</span>
+					</div>
+					<div class="col_s_1_of_10 fr txr pt_20 vm"><img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative pb_20 clearfix">
+					<div class="col_s_9_of_10 fl vm">
+						<span class="profile_circle vm">
+							<span class="p_relative initial">MK</span>
+							<span class="profile_circle_line bg_lightgray"></span>
+						</span>
+						<span class="vm pl_10">
+							<p class="t_title t_bold">Michelle Kim</p>
+							<p class="t_small"><span class="t_gray">BIRTHDAY</span> <span class="t_red">05/12/1985</span></p>
+						</span>
+					</div>
+					<div class="col_s_1_of_10 fr txr pt_20 vm"><img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative pb_20 clearfix">
+					<div class="col_s_9_of_10 fl vm">
+						<span class="profile_circle vm">
+							<span class="p_relative initial">MS</span>
+							<span class="profile_circle_line bg_lightgray"></span>
+						</span>
+						<span class="vm pl_10">
+							<p class="t_title t_bold">Michelle Smith</p>
+							<p class="t_small"><span class="t_gray">BIRTHDAY</span> <span class="t_red">12/10/1975</span></p>
+						</span>
+					</div>
+					<div class="col_s_1_of_10 fr txr pt_20 vm"><img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- List E -->
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_red t_white" id="CTA_Add_New" onClick="location.href='#.html'">Add New Patient</button></div>
 		</main>
 		<footer></footer>
 	</body>
