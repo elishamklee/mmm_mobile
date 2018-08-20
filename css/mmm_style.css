@@ -896,13 +896,28 @@ div[class*="col_"] {
 }
 
 .scan_id_back {
-  background: url("../img/license_back.png") no-repeat;
+  background: url("../img/license_back.svg") no-repeat;
   background-size: cover;
   height: 100%;
 }
 
 .scan_id_front {
-  background: url("../img/license_front.png") no-repeat;
+  background: url("../img/license_front.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.scan_mmcard {
+  background:url("../img/scan_mmcard.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.scan_autho {
+  background:url("../img/scan_autho.svg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.scan_caregiverid {
+  background:url("../img/scan_caregiverid.svg") no-repeat;
   background-size: cover;
   height: 100%;
 }
@@ -1212,7 +1227,7 @@ table {
 /* ============================== */
 /* Modal Popup Code               */
 /*================================*/
-.modal_bg {
+.modal_bg, .modal_popup_bg {
   visibility: hidden;
   position: absolute;
   width:100%;
@@ -1222,29 +1237,39 @@ table {
   opacity: 0;
   left:0;
   top:0;
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transfor: translate(0,0);
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transfor: translateX(0%);
   transition: all .25s ease-in-out;
   -webkit-trnsition: all .25s ease-in-out;
   -moz-trnsition: all .25s ease-in-out;
   -ms-trnsition: all .25s ease-in-out;
   -o-trnsition: all .25s ease-in-out;
 }
-.modal_bg.open, .modal_popup.open {
+.modal_bg.open {
+  visibility: visible;
+  position: fixed;
+  opacity: 1;
+  transform: translateX(85%);
+  -webkit-transform: translateX(85%);
+  -moz-transform: translateX(85%);
+  -ms-transform: translateX(85%);
+  -o-transform: translateX(85%);
+}
+.modal_popup.open, .modal_popup_bg.open {
   visibility: visible;
   position: fixed;
   opacity: 1;
   transform: translateX(0%);
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0);
-  -moz-transform: translate(0,0);
-  -ms-transform: translate(0,0);
-  -o-transfor: translate(0,0);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
   cursor: pointer;
 }
+
 .modal_popup {
   visibility: hidden;
   position: absolute;
@@ -1889,6 +1914,8 @@ span[class^="outline_"] > span {
 .zoom.open .table {
   width: 100%;
   height: 100%;
+  top: 0;
+  left:0;
   position: absolute;
   z-index: 9999999;
 }
