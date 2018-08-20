@@ -41,7 +41,7 @@ $(function(){
 		$('.left_slider_close').addClass('open');
 	});
 
-	$('.left_slider_close, .modal_bg').click(function(){
+	$('.left_slider_close').click(function(){
 		$('.left_slider').removeClass('open');
 		$('.modal_bg').removeClass('open');
 		$('.left_slider_close').removeClass('open');
@@ -63,15 +63,15 @@ $(function(){
 	});
 	
 
-	/* Input Select Highligher */
-	/*$('input,select').focusin(function(){
+	/* Input Select Highligher CTA */
+	$('input,select').focusin(function(){
 		$(this).parent().addClass('focus');
 		$('.btn_search button').css('background','#A20000');
 	})
 	$('input,select').focusout(function(){
 		$(this).parent().removeClass('focus');
 		$('.btn_search button').css('background','');
-	})*/
+	});
 	
 	/*$('.label').click(function(){
 		$(this).addClass('active');
@@ -103,11 +103,11 @@ $(function(){
 	/* Zoom ID */
 	$('#passport').click(function(){
 		$('#zoomid_passport.zoom').addClass('open');
-		$('#zoomid_passport .modal_bg').addClass('open');
+		$('#zoomid_passport .modal_popup_bg').addClass('open');
 	})
 	$('#driver').click(function(){
 		$('#zoomid_driver.zoom').addClass('open');
-		$('#zoomid_driver .modal_bg').addClass('open');
+		$('#zoomid_driver .modal_popup_bg').addClass('open');
 	})
 	$('.close_zoom').click(function(){
 		$(this).parent().removeClass('open');
@@ -137,29 +137,41 @@ $(function(){
 
 
 	/* Account Type */
+	$('#recreation input:radio').click(function(){
+		$('#caregiver .doclist').css('display','none');
+		$('#medical .doclist').css('display','none');
+		$('#caregiver input:radio').prop('checked', false);
+		$('#medical input:radio').prop('checked', false);
+	});
 	$('#medical input:radio').click(function(){
 		$(this).parent().siblings().slideToggle();
 		$('#caregiver .doclist').css('display','none');
 		$('#caregiver input:radio').prop('checked', false);
+		$('#recreation input:radio').prop('checked', false);
 	});
 	$('#caregiver input:radio').click(function(){
 		$(this).parent().siblings().slideToggle();
 		$('#medical .doclist').css('display','none');
 		$('#medical input:radio').prop('checked', false);
+		$('#recreation input:radio').prop('checked', false);
 	});
-	$('.doclist input:checkbox').click(function(){
-		$('#CTA_Next').addClass('hide');
-		$('#CTA_Scan').removeClass('hide');
+	$('#medical .doclist input:checkbox').click(function(){
+		$('#Confirm_CTA_Next, #CTA_Scan_Care').addClass('hide');
+		$('#CTA_Scan_Medical').removeClass('hide');
+	})
+	$('#caregiver .doclist input:checkbox').click(function(){
+		$('#Confirm_CTA_Next, #CTA_Scan_Medical').addClass('hide');
+		$('#CTA_Scan_Care').removeClass('hide');
 	})
 	
 	/* Cancel Modal */
 	$('#CTA_Cancel').click(function(){
 		$('#cancel_modal.modal_popup').addClass('open');
-		$('#cancel_modal .modal_bg').addClass('open');
+		$('#cancel_modal .modal_popup_bg').addClass('open');
 	})
 	$('#no').click(function(){
 		$('#cancel_modal.modal_popup').removeClass('open');
-		$('#cancel_modal .modal_bg').removeClass('open');
+		$('#cancel_modal .modal_popup_bg').removeClass('open');
 	})
 
 	/* Set Time */
@@ -169,7 +181,7 @@ $(function(){
     // it will wait for 5 sec. and then will fire
     // $("#successMessage").hide() function
 	    setTimeout(function() {
-	        $("#shortime.modal_popup, #shortime .modal_bg").removeClass('open', {}, 300)
+	        $("#shortime.modal_popup, #shortime .modal_popup_bg").removeClass('open', {}, 300)
 	    }, 3000);
 	});
 
