@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>MyMedMen</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mmm_js.js"></script>
+		<link rel="stylesheet" href="css/mmm_style.css">
+	</head>
+	<body class="scrolling">
+		<!-- Global Menu S -->
+		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
+		<!-- Hamburger Menu S -->
+		<div id="global_menu" class="left_slider">
+			<div class="pl_20 pr_20 pt_20 pb_10 pr_20 bb_gray">
+				<p class="t_bold t_black t_small"><img src="img/icon_location.svg"><img src="img/space.png" style="width:5px">Current Location</p>
+				<div class="ws_100 bg_lightgray location t_mid">Los Angeles - West Hollywood</div>
+			</div>
+			<div class="col_s_5_of_10 t_black t_bold t_small pl_20 pt_15 pb_15 br_gray">
+				<a href="scan_loading.html"><img src="img/icon_home.svg" class="vt"><img src="img/space.png" style="width:5px">Go to Scan ID</a></div>
+			<div class="col_s_5_of_10 t_black t_bold t_small  pl_20 pt_15 pb_15"><a href="signin.html"><img src="img/icon_signout.svg" class="vt"><img src="img/space.png" style="width:5px">Sign Out</a></div>
+			
+			<nav class="clearfix">
+				<div class="mega_menu expand_p active"><a><span>dispensary</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c open">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="customer_queue_default.html">Customer Queue</a></li>
+										<li><a href="products.html">POS</a></li>
+										<li><a href="doc_directory.html">Doctor Directory</a></li>
+										<li><a href="dispensary_dash.html">Dispensary Dashboard</a></li>
+										<li><a href="dispensary_reports.html">Dispensary Reports</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>inventory</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="store_inventory.html">Store Inventory</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>admin</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="users.html">Users</a></li>
+										<li><a href="location.html">Locations</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+			</nav>
+		</div>
+		<!-- Hamburger Menu E -->
+		<div class="modal_bg"></div>
+		<!-- Global Menu S -->
+		<!-- Welcome Popup S -->
+		<div class="modal_popup open" id="shortime">
+			<div>
+				<div class="p_relative clearfix">
+					<!-- Center S -->
+					<div>
+						<span class="scan round p_relative">
+							<span class="scan_inside round table bg_white"><span class="scan_text t_black p_absoute table_cell t_bold"><p class="pb_5"><img src="img/icon_popup_check.svg"></p>Welcome to<br>MedMen</span></span>
+						</span>
+					</div>
+					<!-- Center E -->
+				</div>
+			</div>
+			<span class="modal_bg open"></span>
+		</div>
+		<!-- Welcome Popup E -->
+		
+		<!-- Global Menu S -->
+
+
+		<!-- Right Slider Search S -->
+		<div class="right_slider" id="search">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">Search</p>
+					<span class="t_mid pt_5 t_thin">Please select the type and enter keyword.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="search pa_20 pt_0 clearfix">
+				<div class="warning_msg txc t_red pb_20 warning"><img src="img/icon_warning_red.svg" class="vm"> <span class="pl_5">Please select the type.</span></div>
+				<div class="col_3 ws_100 clearfix">
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_customer.svg" class="show"><img src="img/search_customer_red.svg" class="hide"></p>Customer</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_product.svg" class="show"><img src="img/search_product_red.svg" class="hide"></p>Product</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_doctor.svg" class="show"><img src="img/search_doctor_red.svg" class="hide"></p>Doctor</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_inventory.svg" class="show"><img src="img/search_inventory_red.svg" class="hide"></p>Inventory</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_transaction.svg" class="show"><img src="img/search_transaction_red.svg" class="hide"></p>Transaction</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_user.svg" class="show"><img src="img/search_user_red.svg" class="hide"></p>User</span></div>
+				</div>
+			</div>
+			<div class="ws_100 pa_20 pt_0 txc">
+				<div class="pa_10 pt_0 search">
+					<input type="text" placeholder="Search keyword">
+				</div>
+				<p class="pt_15 btn_search"><button class="bigsize bg_gray t_white">Search</button></p>
+			</div>
+		</div>
+		<!-- Right Slider Search E -->
+
+
+		<!-- Right Slider Order History S -->
+		<div class="right_slider" id="order_history">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">Esther Rodriquez</p>
+					<div class="acc_type">Adult / Employee</div>
+				</div>
+				<div class="ws_100 contents_cap clearfix bg_lightgray with_view"></div>
+				<!-- View By S -->
+				<div class="container clearfix view_by">
+					<div class="ws_100 clearfix bg_lightgray pl_20 pr_20 pt_0 pb_10 t_mid">
+						<div class="col_s_5_of_10 fl txl">
+							<p class="uppercase t_small">orders</p>
+							<p class="t_red t_bold">Total 3</p>
+						</div>
+						<div class="col_s_5_of_10 fr txr form">
+							<div class="clearfix pr_10">
+								<div class="br_gray clearfix pr_15">
+									<div class="uppercase t_small">view by</div>
+									<select dir="rtl" class="t_bold fr">
+										<option>All</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- View By E -->
+			</div>
+			<div class="pa_20 clearfix t_black">
+				<!-- Order History List S -->
+				<div class="ws_100 clearfix pb_30 view_detail">
+					<div class="inline pr_10"><span class="outline_date t_black"><span>07/24/2018</span></span></div>
+					<div class="inline t_bold">Transaction ID 000014</div>
+					<div class="inline fr"><img src="img/icon_truck.svg" class="pr_10"> <img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- Order History List E -->
+				<!-- Order History List S -->
+				<div class="ws_100 clearfix pb_30 view_detail">
+					<div class="inline pr_10"><span class="outline_date t_black"><span>05/12/2018</span></span></div>
+					<div class="inline t_bold">Transaction ID 000006</div>
+					<div class="inline fr"><img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- Order History List E -->
+				<!-- Order History List S -->
+				<div class="ws_100 clearfix pb_30 view_detail">
+					<div class="inline pr_10"><span class="outline_date t_black"><span>02/02/2018</span></span></div>
+					<div class="inline t_bold">Transaction ID 000002</div>
+					<div class="inline fr"><img src="img/arrow_next.svg"></div>
+				</div>
+				<!-- Order History List E -->
+			</div>
+		</div>
+		<!-- Right Slider Order History E -->
+
+		<!-- Right Slider Order History Detial S -->
+		<div class="right_slider" id="order_detail">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">Esther Rodriquez</p>
+					<div class="acc_type">Adult / Employee</div>
+				</div>
+				<div class="ws_100 contents_cap clearfix bg_lightgray with_view"></div>
+				<!-- View By S -->
+				<div class="container clearfix">
+					<div class="ws_100 clearfix bg_lightgray pl_20 pr_20 pt_0 pb_10 vm">
+						<div class="col_s_2_of_10 txl gotoback">
+							<img src="img/arrow_back.svg"><span class="pl_10">Back</span>
+						</div>
+						<div class="col_s_6_of_10 txc t_bold t_title">
+							Transaction ID : 000014
+						</div>
+						<div class="col_s_2_of_10 fr txr">
+							<img src="img/icon_truck.svg">
+						</div>
+					</div>
+				</div>
+				<!-- View By E -->
+			</div>
+			<div class="pa_20 clearfix t_black">
+				<!-- Order History List S -->
+				<div class="ws_100 clearfix">
+					<div class="clearfix inline"><span class="outline_date t_black"><span>07/24/2018</span></span> <span class="outline_time t_black"><span>02:20 PM</span></span></div>
+					<span class="fr txr t_mid pt_3">Total : 3</span>
+				</div>
+				<!-- Order History List E -->
+				<!-- Item List S -->
+				<div class="table pos pb_15 pt_15 bb_gray">
+					<div class="table_cell">
+						<div class="col_s_7_of_10">
+							<div class="inline pr_10 vt">
+								<span class="p_item"><span class="item_circle indica_domi"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/1824408246522415_Raw.jpg.344x304_q100.jpg" class="round"></span>
+							</div>
+							<div class="inline pt_5">
+								<p class="t_bold">Northern Emeralds</p>
+								<div class="pt_5">
+									<p class="t_mid">Emerald OG</p>
+									<p class="t_gray t_small">Amount : 3.5g</p>
+								</div>
+							</div>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<div class="inline vt pr_10"><span class="qty round txc">1</span></div>
+							<div class="inline vt t_bold price"><span class="original_p">$60.00</span></div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+				<!-- Item List S -->
+				<div class="table pos pb_15 pt_15 bb_gray">
+					<div class="table_cell">
+						<div class="col_s_7_of_10">
+							<div class="inline pr_10 vt">
+								<span class="p_item"><span class="item_circle other"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/3856830763764740_Marketable.jpg.344x304_q100.jpg" class="round"></span>
+							</div>
+							<div class="inline pt_5">
+								<p class="t_bold">Kush Queen</p>
+								<div class="pt_5">
+									<p class="t_mid">Bath Bomb - Love CBD</p>
+									<p class="t_gray t_small">Amount : 25mg</p>
+								</div>
+							</div>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<div class="inline vt pr_10"><span class="qty round txc">2</span></div>
+							<div class="inline vt t_bold price"><span class="original_p">$20.00</span></div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+				<!-- Item List S -->
+				<div class="table pos pb_15 pt_15">
+					<div class="table_cell">
+						<div class="col_s_7_of_10">
+							<div class="inline pr_10 vt">
+								<span class="p_item"><span class="item_circle sativa"></span><img src="https://mymedmen-asset-server.s3.amazonaws.com/media/uploads/product_photos/3278825100288403_Raw.jpg.344x304_q100.jpg" class="round"></span>
+							</div>
+							<div class="inline pt_5">
+								<p class="t_bold">Lowell Herb Co.</p>
+								<div class="pt_5">
+									<p class="t_mid">The Exuberant Sativa</p>
+									<p class="t_gray t_small">Amount : 7g</p>
+								</div>
+							</div>
+						</div>
+						<div class="col_s_3_of_10 fr txr pt_5">
+							<div class="inline vt pr_10"><span class="qty round txc">1</span></div>
+							<div class="inline vt t_bold price"><span class="original_p">$70.00</span></div>
+						</div>
+					</div>
+				</div>
+				<!-- Item List E -->
+			</div>
+			<!-- Order Summary S -->
+			<div class="t_mid pa_20 pt_0">
+				<div class="bg_lightgray summary pa_20">
+					<table>
+						<tr>
+							<td>Total Qty</td>
+							<td class="txr">4</td>
+						</tr>
+						<tr>
+							<td>Merchant Total</td>
+							<td class="txr">$150.00</td>
+						</tr>
+					</table>
+					<table class="discount">
+						<tr>
+							<td>Coupon 20%</td>
+							<td class="txr">-$30.00</td>
+						</tr>
+					</table>
+					<table>
+						<tr>
+							<td>Subtotal</td>
+							<td class="txr">$120.00</td>
+						</tr>
+						<tr>
+							<td>Excise Tax (8%)</td>
+							<td class="txr">$9.6</td>
+						</tr>
+						<tr>
+							<td>Sales Tax</td>
+							<td class="txr">$10.80</td>
+						</tr>
+					</table>
+					<table class="total">
+						<tr>
+							<td>Total</td>
+							<td class="txr">$140.04</td>
+						</tr>
+					</table>
+				</div>
+				<div class="ws_100 clearfix pt_15 pb_15 t_black bb2_black">
+					<span class="fl">Payment Method</span>
+					<span class="fr txr t_red">Cash + Debit Card</span>
+				</div>
+			</div>
+			<!-- Order Summary E -->
+		</div>
+		<!-- Right Slider Order History Detail E -->
+
+
+		<header>
+			<div class="container pa_20">
+				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
+				<span class="col_s_8_of_10 txc t_white">Los Angeles - West Hollywood</span>
+				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
+			</div>
+			<div class="ws_100 contents_cap clearfix bg_lightgray with_view"></div>
+			<!-- View By S -->
+			<div class="container clearfix view_by">
+				<div class="ws_100 clearfix bg_lightgray pl_20 pr_20 pt_0 pb_10 t_mid">
+					<div class="col_s_5_of_10 fl">
+						<p class="uppercase t_small">checked-in customers</p>
+						<p class="t_red t_bold">Total 5</p>
+					</div>
+					<div class="col_s_5_of_10 fr txr form">
+						<div class="clearfix pr_10">
+							<div class="br_gray clearfix pr_15">
+								<div class="uppercase t_small">view by</div>
+								<select dir="rtl" class="t_bold fr">
+									<option>All</option>
+									<option>New Customer</option>
+									<option>Caregiver</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- View By E -->
+		</header>
+		<main>
+			
+			<div class="container clearfix queue">
+				<!-- List S -->
+				<div class="selected p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">02:20PM</span></p>
+						<p class="clearfix t_red pt_5 pb_10"><span class="t_bold vb">Phillip Christian</span> <span class="icon_new">NEW</span></p>
+						<div><span class="acc_tag">adult</span><span class="acc_tag">employee</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_gray"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_red"><span><span>New<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">01:20 PM</span></p>
+						<p class="clearfix pt_5 pb_10"><span class="t_bold vb">Johnny Palmer</span> <span class="icon_new">NEW</span></p>
+						<div><span class="acc_tag">adult</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_gray"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_red"><span><span>New<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">12:20 PM</span></p>
+						<p class="clearfix pt_5 pb_10"><span class="t_bold vb">Ann Aguilar</span></p>
+						<div><span class="acc_tag">adult</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_darkred" id="view_orderhistory"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_orange"><span><span>Continue<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">11:30 AM</span></p>
+						<p class="clearfix pt_5 pb_10"><span class="t_bold vb">Esther Rodriquez</span></p>
+						<div><span class="acc_tag">adult</span><span class="acc_tag">employee</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_darkred" id="view_orderhistory"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_orange"><span><span>Continue<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">11:20 AM</span></p>
+						<p class="clearfix pt_5 pb_10"><span class="t_bold vb">Jay Cohen</span></p>
+						<div><span class="acc_tag">medical</span><span class="acc_tag">under 21</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_darkred" id="view_orderhistory"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_orange"><span><span>Continue<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+				<!-- List S -->
+				<div class="p_relative">
+					<div class="col_s_6_of_10 fl">
+						<p class="clearfix t_small t_gray"><img src="img/icon_clock.svg" class="vm"> <span class="vm">11:00 AM</span></p>
+						<p class="clearfix pt_5 pb_10"><span class="t_bold vb">Elisha Lee</span></p>
+						<div><span class="acc_tag">adult</span><span class="acc_tag">employee</span></div>
+					</div>
+					<div class="col_s_4_of_10 fr txr pt_10">
+						<span class="cta bg_darkred" id="view_orderhistory"><span><span>Order<br>History</span></span></span>
+						<span class="cta bg_red"><span><span>New<br>Order</span></span></span>
+					</div>
+				</div>
+				<!-- List E -->
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

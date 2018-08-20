@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="js/mmm_js.js"></script>
 		<link rel="stylesheet" href="css/mmm_style.css">
 	</head>
-	<body>
+	<body class="scrolling">
 		<!-- Global Menu S -->
 		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
 		<!-- Hamburger Menu S -->
@@ -78,24 +78,7 @@
 		<!-- Hamburger Menu E -->
 		<div class="modal_bg"></div>
 		<!-- Global Menu S -->
-		<!-- Cancel Popup S -->
-		<div class="modal_popup" id="cancel_modal">
-			<div>
-				<div class="p_relative clearfix">
-					<div><span class="cta bg_gray" id="no"><span>No</span></span><span class="dot"><img src="img/dot_double.svg"></span></div>
-					<!-- Center S -->
-					<div>
-						<span class="scan round p_relative">
-							<span class="scan_inside round table bg_white"><span class="scan_text t_black p_absoute table_cell t_bold"><p class="pb_5"><img src="img/icon_popup_warning.svg"></p>Do you want to<br>cancel?</span></span>
-						</span>
-					</div>
-					<!-- Center E -->
-					<div><a href="scan_loading.html"><span class="cta bg_pink fr"><span>Yes</span></span><span class="dot right"><img src="img/dot_double.svg"></span></a></div>
-				</div>
-			</div>
-			<span class="modal_bg"></span>
-		</div>
-		<!-- Cancel Popup E -->
+
 
 		<!-- Right Slider Search S -->
 		<div class="right_slider" id="search">
@@ -131,20 +114,126 @@
 			</div>
 		</div>
 		<!-- Right Slider Search E -->
+
+		<!-- Right Slider View Note S -->
+		<div class="right_slider" id="view_note_detail">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">View Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" name="account" class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="Mango Flavor Sold Out">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl">Amber Heard's favorite flavor is Mango. Currently, mango flavor products are out of stock.
+
+					Created by Austine Jason</textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Save">Save</button></div>
+			<!-- Button E -->
+			
+		</div>
+		<!-- Right Slider View Note E -->
+
+		<!-- Right Slider New Note S -->
+		<div class="right_slider" id="add_new_note">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">New Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" name="account" class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl"></textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_green t_white" id="CTA_Save" onClick="location.href='d_note_new.html'">Save</button></div>
+			<!-- Button E -->
+		</div>
+		<!-- Right Slider New Note E -->
+
+		<!-- Right Slider Flag View Note S -->
+		<div class="right_slider" id="view_flag">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">View Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" checked class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="Store Credit $5.00">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl">She has the store credit $5.00
+
+					Created by Ashley White</textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Save">Save</button></div>
+			<!-- Button E -->
+			
+		</div>
+		<!-- Right Slider Flag View Note E -->
+
 		<header>
 			<div class="container pa_20">
 				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
-				<span class="col_s_8_of_10 txc t_white">Los Angeles - West Hollywood</span>
+				<span class="col_s_8_of_10 txc t_white">
+					<a href="dashboard.html">
+						<div class="ws_100 txc no_pic_name">
+							<p class="t_title t_bold">Amber Heard</p>
+							<div class="acc_type">Adult / Employee</div>
+						</div>
+					</a>
+				</span>
 				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
 			</div>
-			<nav class="col_5 clearfix process">
-				<div class="txc"><a href="registration1.html"><span class="circle active done">1</span><span class="ws_100 t_small t_white">Scan ID</span></a></div>
-				<div class="txc"><span class="circle active">2</span><span class="ws_100 t_small t_white">Personal</span></div>
-				<div class="txc"><span class="circle">3</span><span class="ws_100 t_small t_white">Marketing</span></div>
-				<div class="txc"><span class="circle">4</span><span class="ws_100 t_small t_white">Group</span></div>
-				<div class="txc"><span class="circle">5</span><span class="ws_100 t_small t_white">Account</span></div>
-			</nav>
-			<div class="ws_100 contents_cap clearfix"></div>
+			<!-- Dashboard Header S -->
+			
+			
+			<!-- Dashboard Header E -->
+			<div class="ws_100 contents_cap clearfix p_relative">
+				<div class="tab_menu bg_darkred">
+					<span class="selected"><a href="t_profile.html">Profile</a></span>
+					<span><a href="t_marketing.html">Marketing</a></span>
+					<span><a href="t_group.html">Group</a></span>
+					<span><a href="t_account.html">Account</a></span>
+					<span><a href="t_id.html">I.D</a></span>
+				</div>
+			</div>
 		</header>
 		<main>
 			<!-- Calendar S -->
@@ -224,7 +313,7 @@
 				</table>
 			</div>
 			<!-- Calendar E -->
-			<div class="container clearfix">
+			<div class="container clearfix pt_20">
 				<!-- Profile S -->
 				<div class="wrapper form">
 					<div class="col_2">
@@ -301,7 +390,7 @@
 				</div>
 				<!-- Profile E -->
 				<!-- Button S -->
-				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="CTA_Next" onClick="location.href='registration3.html'">Next</button></div>
+				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel" onClick="location.href='dashboard.html'">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Next" onClick="location.href='dashboard.html'">Save</button></div>
 				<!-- Button E -->
 			</div>
 		</main>

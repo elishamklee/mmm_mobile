@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<title>MyMedMen</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mmm_js.js"></script>
+		<link rel="stylesheet" href="css/mmm_style.css">
+	</head>
+	<body class="scrolling">
+		<!-- Global Menu S -->
+		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
+		<!-- Hamburger Menu S -->
+		<div id="global_menu" class="left_slider">
+			<div class="pl_20 pr_20 pt_20 pb_10 pr_20 bb_gray">
+				<p class="t_bold t_black t_small"><img src="img/icon_location.svg"><img src="img/space.png" style="width:5px">Current Location</p>
+				<div class="ws_100 bg_lightgray location t_mid">Los Angeles - West Hollywood</div>
+			</div>
+			<div class="col_s_5_of_10 t_black t_bold t_small pl_20 pt_15 pb_15 br_gray">
+				<a href="scan_loading.html"><img src="img/icon_home.svg" class="vt"><img src="img/space.png" style="width:5px">Go to Scan ID</a></div>
+			<div class="col_s_5_of_10 t_black t_bold t_small  pl_20 pt_15 pb_15"><a href="signin.html"><img src="img/icon_signout.svg" class="vt"><img src="img/space.png" style="width:5px">Sign Out</a></div>
+			
+			<nav class="clearfix">
+				<div class="mega_menu expand_p active"><a><span>dispensary</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c open">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="customer_queue_default.html">Customer Queue</a></li>
+										<li><a href="products.html">POS</a></li>
+										<li><a href="doc_directory.html">Doctor Directory</a></li>
+										<li><a href="dispensary_dash.html">Dispensary Dashboard</a></li>
+										<li><a href="dispensary_reports.html">Dispensary Reports</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>inventory</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="store_inventory.html">Store Inventory</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+				<div class="mega_menu expand_p"><a><span>admin</span></a>
+					<!-- Submenu Option Left Start -->
+					<div class="mega_sub expand_c">
+						<div class="col_s_10_of_10">
+							<dl>
+								<dd>
+									<ul>
+										<li><a href="users.html">Users</a></li>
+										<li><a href="location.html">Locations</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- Submenu Option Left End -->
+				</div>
+			</nav>
+		</div>
+		<!-- Hamburger Menu E -->
+		<div class="modal_bg"></div>
+		<!-- Global Menu S -->
+
+
+		<!-- Right Slider Search S -->
+		<div class="right_slider" id="search">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">Search</p>
+					<span class="t_mid pt_5 t_thin">Please select the type and enter keyword.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="search pa_20 pt_0 clearfix">
+				<div class="warning_msg txc t_red pb_20 warning"><img src="img/icon_warning_red.svg" class="vm"> <span class="pl_5">Please select the type.</span></div>
+				<div class="col_3 ws_100 clearfix">
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_customer.svg" class="show"><img src="img/search_customer_red.svg" class="hide"></p>Customer</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_product.svg" class="show"><img src="img/search_product_red.svg" class="hide"></p>Product</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_doctor.svg" class="show"><img src="img/search_doctor_red.svg" class="hide"></p>Doctor</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_inventory.svg" class="show"><img src="img/search_inventory_red.svg" class="hide"></p>Inventory</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_transaction.svg" class="show"><img src="img/search_transaction_red.svg" class="hide"></p>Transaction</span></div>
+
+					<div class="pb_10 search_select"><span class="search_category t_bold"><p class="pt_10 pb_5"><img src="img/search_user.svg" class="show"><img src="img/search_user_red.svg" class="hide"></p>User</span></div>
+				</div>
+			</div>
+			<div class="ws_100 pa_20 pt_0 txc">
+				<div class="pa_10 pt_0 search">
+					<input type="text" placeholder="Search keyword">
+				</div>
+				<p class="pt_15 btn_search"><button class="bigsize bg_gray t_white">Search</button></p>
+			</div>
+		</div>
+		<!-- Right Slider Search E -->
+
+		<!-- Right Slider View Note S -->
+		<div class="right_slider" id="view_note_detail">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">View Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" name="account" class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="Mango Flavor Sold Out">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl">Amber Heard's favorite flavor is Mango. Currently, mango flavor products are out of stock.
+
+					Created by Austine Jason</textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Save">Save</button></div>
+			<!-- Button E -->
+			
+		</div>
+		<!-- Right Slider View Note E -->
+
+		<!-- Right Slider New Note S -->
+		<div class="right_slider" id="add_new_note">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">New Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" name="account" class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl"></textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_green t_white" id="CTA_Save" onClick="location.href='d_note_new.html'">Save</button></div>
+			<!-- Button E -->
+		</div>
+		<!-- Right Slider New Note E -->
+
+		<!-- Right Slider Flag View Note S -->
+		<div class="right_slider" id="view_flag">
+			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
+			<div class="col_s_10_of_10 txc pt_20 bg_red">
+				<div class="ws_100 pb_15">
+					<p class="t_title t_bold">View Note</p>
+					<span class="t_mid pt_5 t_thin">Please write any notes for customer satisfaction.</span>
+				</div>
+				<div class="ws_100 contents_cap clearfix"></div>
+			</div>
+			<div class="form pt_0 clearfix t_black">
+				<div class="ws_100 clearfix pb_10 bb_gray vt">
+					<span class="t_red vt pt_10">Flag On/Off</span>
+					<input type="checkbox" checked class="swipe fr">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Subject <span class="t_red">*</span></span><input type="text" value="Store Credit $5.00">
+				</div>
+				<div class="col_s_10_of_10 pt_15">
+					<span class="label">Note <span class="t_red">*</span></span>
+					<textarea rows="14 txl">She has the store credit $5.00
+
+					Created by Ashley White</textarea>
+				</div>
+			</div>
+			<!-- Button S -->
+			<div class="ws_100 txc p_fixed pf_bottom p_high_9"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Save">Save</button></div>
+			<!-- Button E -->
+			
+		</div>
+		<!-- Right Slider Flag View Note E -->
+
+		<header>
+			<div class="container pa_20">
+				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
+				<span class="col_s_8_of_10 txc t_white">
+					<a href="dashboard.html">
+						<div class="ws_100 txc no_pic_name">
+							<p class="t_title t_bold">Amber Heard</p>
+							<div class="acc_type">Adult / Employee</div>
+						</div>
+					</a>
+				</span>
+				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
+			</div>
+			<!-- Dashboard Header S -->
+			
+			
+			<!-- Dashboard Header E -->
+			<div class="ws_100 contents_cap clearfix p_relative">
+				<div class="tab_menu bg_darkred">
+					<span><a href="t_profile.html">Profile</a></span>
+					<span><a href="t_marketing.html">Marketing</a></span>
+					<span><a href="t_group.html">Group</a></span>
+					<span class="selected"><a href="t_account.html">Account</a></span>
+					<span><a href="t_id.html">I.D</a></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container clearfix pt_20">
+				<!-- Account S -->
+				<div class="wrapper form">
+					<div class="col_s_10_of_10 p_relative pb_10 bb_black">
+						<span class="fl t_bold pt_5">Account Type</span>
+					</div>
+					<div class="ws_100 clearfix pt_20 pb_10 bb_gray vt">
+						<span class="t_red vt pt_10">Recreational</span>
+						<input type="radio" name="account" class="swipe fr" checked>
+					</div>
+					<div class="ws_100 clearfix pt_10 bb_gray vt" id="medical">
+						<div class="clearfix pb_10">
+							<span class="t_red vt pt_10">Medical</span>
+							<input type="radio" name="account" class="swipe fr">
+						</div>
+						<div class="pa_20 bt_gray clearfix hide doclist">
+							<p class="pb_15">Select Documents to Scan</p>
+							<ul>
+								<li class="t_red pb_20"><input type="checkbox"> MMIC</li>
+								<li class="t_red"><input type="checkbox"> Recommendation</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ws_100 clearfix pt_10 bb_gray vt" id="caregiver">
+						<div class="clearfix pb_10">
+							<span class="t_red vt pt_10">Caregiver</span>
+							<input type="radio" name="account" class="swipe fr">
+						</div>
+						<div class="pa_20 bt_gray clearfix hide doclist">
+							<p class="pb_15">Select Documents to Scan</p>
+							<ul>
+								<li class="t_red pb_20"><input type="checkbox"> Authorization</li>
+								<li class="t_red"><input type="checkbox"> Caregiver ID</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Account E -->
+				<!-- Button S -->
+				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel" onClick="location.href='dashboard.html'">Cancel</button><span class="button_space"></span><button class="bg_gray t_white" id="CTA_Next" onClick="location.href='dashboard.html'">Save</button></div>
+				<!-- Button E -->
+			</div>
+		</main>
+		<footer></footer>
+	</body>
+</html>

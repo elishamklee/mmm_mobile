@@ -139,169 +139,54 @@
 			</div>
 			<nav class="col_5 clearfix process">
 				<div class="txc"><a href="registration1.html"><span class="circle active done">1</span><span class="ws_100 t_small t_white">Scan ID</span></a></div>
-				<div class="txc"><span class="circle active">2</span><span class="ws_100 t_small t_white">Personal</span></div>
-				<div class="txc"><span class="circle">3</span><span class="ws_100 t_small t_white">Marketing</span></div>
-				<div class="txc"><span class="circle">4</span><span class="ws_100 t_small t_white">Group</span></div>
-				<div class="txc"><span class="circle">5</span><span class="ws_100 t_small t_white">Account</span></div>
+				<div class="txc"><a href="registration2.html"><span class="circle active done">2</span><span class="ws_100 t_small t_white">Personal</span></a></div>
+				<div class="txc"><a href="registration3.html"><span class="circle active done">3</span><span class="ws_100 t_small t_white">Marketing</span></a></div>
+				<div class="txc"><a href="registration4.html"><span class="circle active done">4</span><span class="ws_100 t_small t_white">Group</span></a></div>
+				<div class="txc"><span class="circle active">5</span><span class="ws_100 t_small t_white">Account</span></div>
 			</nav>
 			<div class="ws_100 contents_cap clearfix"></div>
 		</header>
 		<main>
-			<!-- Calendar S -->
-			<div class="bg_lightgray calendar clearfix pa_20">
-				<div class="ws_100 no_line p_relative pb_10">
-					<span class="p_relative vm" style="width: 70px;font-size: 150%;">
-						<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
-						<select class="t_bold">
-							<option>June</option>
-						</select>
-					</span>
-					<span class="p_relative vm" style="width: 52px;margin-left:30px">
-						<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
-						<select>
-							<option>1976</option>
-						</select>
-					</span>
-					<span class="fr vm icon_close"><img src="img/close_black.svg"></span>
-				</div>
-				<table class="ws_100 txc t_small lh_calender bb_gray">
-					<tr class="t_gray">
-						<td>Sun</td>
-						<td>Mon</td>
-						<td>Tue</td>
-						<td>Wed</td>
-						<td>Thr</td>
-						<td>Fri</td>
-						<td>Sat</td>
-					</tr>
-				</table>
-				<table class="ws_100 txc t_small lh_calender">
-					<tr>
-						<td></td>
-						<td></td>
-						<td>1</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-					</tr>
-					<tr>
-						<td>6</td>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td>12</td>
-					</tr>
-					<tr>
-						<td>13</td>
-						<td>14</td>
-						<td>15</td>
-						<td>16</td>
-						<td>17</td>
-						<td>18</td>
-						<td>19</td>
-					</tr>
-					<tr>
-						<td>20</td>
-						<td>21</td>
-						<td>22</td>
-						<td>23</td>
-						<td>24</td>
-						<td>25</td>
-						<td class="p_relative t_white"><span class="p_high_9 p_relative">26</span><span class="select_date"></span></td>
-					</tr>
-					<tr>
-						<td>27</td>
-						<td>28</td>
-						<td>29</td>
-						<td>30</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
-			</div>
-			<!-- Calendar E -->
 			<div class="container clearfix">
-				<!-- Profile S -->
+				<!-- Account S -->
 				<div class="wrapper form">
-					<div class="col_2">
-						<div class="col_s_5_of_10">
-							<span class="label">CA Driver Lisence # <span class="t_red">*</span></span><input type="text" value="B2201793">
+					<div class="col_s_10_of_10 p_relative pb_10 bb_black">
+						<span class="fl t_bold pt_5">Account Type</span>
+					</div>
+					<div class="ws_100 clearfix pt_20 pb_10 bb_gray vt">
+						<span class="t_red vt pt_10">Recreational</span>
+						<input type="radio" name="account" class="swipe fr">
+					</div>
+					<div class="ws_100 clearfix pt_10 bb_gray vt" id="medical">
+						<div class="clearfix pb_10">
+							<span class="t_red vt pt_10">Medical</span>
+							<input type="radio" name="account" class="swipe fr">
 						</div>
-						<div class="col_s_5_of_10">
-							<span class="fr p_absolute form_icon" id="icon_calendar"><img src="img/icon_calendar.svg"></span>
-							<span class="label">Expiration Date <span class="t_red">*</span></span><input type="text" value="06/26/2022">
+						<div class="pa_20 bt_gray clearfix hide doclist">
+							<p class="pb_15">Select Documents to Scan</p>
+							<ul>
+								<li class="t_red pb_20"><input type="checkbox"> MMIC</li>
+								<li class="t_red"><input type="checkbox"> Recommendation</li>
+							</ul>
 						</div>
 					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">First Name <span class="t_red">*</span></span><input type="text" value="Phillip">
+					<div class="ws_100 clearfix pt_10 bb_gray vt" id="caregiver">
+						<div class="clearfix pb_10">
+							<span class="t_red vt pt_10">Caregiver</span>
+							<input type="radio" name="account" class="swipe fr">
 						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Last Name <span class="t_red">*</span></span><input type="text" value="Christian">
-						</div>
-					</div>
-					<div class="col_s_10_of_10 pt_15">
-						<span class="label">Address <span class="t_red">*</span></span><input type="text" value="5880 Jefferson Blvd">
-					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Apt/Suite/Floor</span><input type="text" value="N/A">
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">City <span class="t_red">*</span></span><input type="text" value="Los Angeles">
-						</div>
-					</div>
-
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">State</span>
-								<select>
-									<option>Select</option>
-									<option>Alabama</option>\
-									<option>Alabama</option>
-									<option>Alaska</option>
-									<option>Arkansas</option>
-									<option selected>California</option>
-									<option>Colorado</option>
-									<option>Connecticut</option>
-									<option>Delaware</option>
-									<option>Florida</option>
-									<option>Georgia</option>
-									<option>Hawaii</option>
-								</select>
-							<span class="fr p_absolute form_icon left"><img src="img/arrow_dropdown.svg"></span>
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<div class="col_s_5_of_10 pr_5">
-								<span class="label">Zip Code <span class="t_red">*</span></span><input type="text" value="90031">
-							</div>
-							<div class="col_s_5_of_10 pl_5">
-								<span class="label">Country</span>
-									<select>
-										<option>USA</option>
-									</select>
-								<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
-							</div>
-						</div>
-					</div>
-					<div class="col_2">
-						<div class="col_s_5_of_10 pt_15">
-							<span class="fr p_absolute form_icon left" id="icon_calendar"><img src="img/icon_calendar.svg"></span>
-							<span class="label">Birthday <span class="t_red">*</span></span><input type="text" value="06/26/2022">
-						</div>
-						<div class="col_s_5_of_10 pt_15">
-							<span class="label">Gender</span><select><option>Male</option></select>
-							<span class="fr p_absolute form_icon"><img src="img/arrow_dropdown.svg"></span>
+						<div class="pa_20 bt_gray clearfix hide doclist">
+							<p class="pb_15">Select Documents to Scan</p>
+							<ul>
+								<li class="t_red pb_20"><input type="checkbox"> Authorization</li>
+								<li class="t_red"><input type="checkbox"> Caregiver ID</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-				<!-- Profile E -->
+				<!-- Account E -->
 				<!-- Button S -->
-				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="CTA_Next" onClick="location.href='registration3.html'">Next</button></div>
+				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_black t_white" id="CTA_Cancel">Cancel</button><span class="button_space"></span><button class="bg_darkred t_white" id="Confirm_CTA_Next" onClick="location.href='customer_queue.html'">Next</button><button class="bg_red t_white hide" id="CTA_Scan">Scan Doc.</button></div>
 				<!-- Button E -->
 			</div>
 		</main>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
 	<head>
 		<meta charset="utf-8">
 		<meta content="IE=Edge" http-equiv="X-UA-Compatible" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<title>MyMedMen</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="js/mmm_js.js"></script>
+		<script type="text/javascript" src="js/mmm_js.js"></script>
 		<link rel="stylesheet" href="css/mmm_style.css">
-		
 	</head>
-	<body class="bg_red">
+	<body class="scrolling">
 		<!-- Global Menu S -->
 		<span class="left_slider_close"><img src="img/close_globalmenu.svg"></span>
 		<!-- Hamburger Menu S -->
@@ -78,6 +77,9 @@
 		</div>
 		<!-- Hamburger Menu E -->
 		<div class="modal_bg"></div>
+		<!-- Global Menu S -->
+
+
 		<!-- Right Slider Search S -->
 		<div class="right_slider" id="search">
 			<span class="right_slider_close"><img src="img/icon_close_rightslider.svg"></span>
@@ -112,26 +114,64 @@
 			</div>
 		</div>
 		<!-- Right Slider Search E -->
+
+
 		<header>
 			<div class="container pa_20">
 				<span class="col_s_1_of_10 fl txl"><img src="img/hamburger_menu.svg" alt="Hamburger Menu" class="icon_menu"></span>
-				<span class="col_s_8_of_10 txc t_white"></span>
+				<span class="col_s_8_of_10 txc t_white">Los Angeles - West Hollywood</span>
 				<span class="col_s_1_of_10 fr txr"><img src="img/icon_search.svg" alt="Search" class="icon_search"></span>
+			</div>
+			<!-- Dashboard Header S -->
+			<div class="col_s_8_of_10 clearfix table dashboard fc pb_10">
+				<div class="inline txc p_relative">
+					<span class="p_absolute dot"><img src="img/dot_three.svg"></span>
+					<a href="t_profile.html"><span><img src="img/icon_profile.svg"></span>
+					<p class="t_small pt_5">Profile<p></a>
+				</div>
+				<div class="inline txc">
+					<img src="img/profile_women.svg">
+				</div>
+				<div class="inline txc p_relative">
+					<span class="p_absolute dot"><img src="img/dot_three.svg"></span>
+					<a href="product.html"><span><img src="img/icon_cart.svg"></span>
+					<p class="t_small pt_5">Order<p></a>
+				</div>
+			</div>
+			<div class="ws_100 txc profile_name">
+				<p class="t_title t_bold">Amber Heard</p>
+				<div class="acc_type">Adult / Employee</div>
+			</div>
+			<!-- Dashboard Header E -->
+			<div class="ws_100 contents_cap clearfix p_relative">
+				<div class="tab_menu bg_darkred">
+					<span><a href="d_orderhistory.html">Order History</a></span>
+					<span><a href="d_storehistory.html">Store History</a></span>
+					<span><a href="d_note.html">Note</a></span>
+				</div>
 			</div>
 		</header>
 		<main>
-			<div class="container txc scan_wrapper">
-				<div><img src="img/logo.svg"></div>
-				<div class="col_s_10_of_10 txc t_white ls_4 pt_20">California</div>
-				<!-- Scan S -->
-				<a href="scan_id_back.html">
-				<div class="p_relative clearfix pt_40">
-					<span class="scan round p_relative">
-						<span class="scan_inside round table"><span class="scan_text t_white p_absoute table_cell">Ready to<br>Scan ID</span></span>
-					</span>
+			<div class="container clearfix pa_20">
+				<div class="txc t_red t_title vt pb_20"><img src="img/search_product_red.svg" style="width: 32px;"> <span class="pl_5 vm t_bold">Allowance : 28g</span></div>
+				<div class="ws_100 clearfix bg_lightgray round_edge pa_20">
+					<div class="col_s_3_of_10">
+						<div class="inline">
+							<img src="img/license_women.svg" class="ws_100">
+							<span class="ws_100 id_type t_white uppercase bg_green txc">passport</span>
+							<span class="ws_100 id_type t_white uppercase bg_blue txc">driver license</span>
+						</div>
+					</div>
+					<div class="col_s_6_of_10 fr t_mid">
+						<p class="uppercase clearfix pb_20"><span class="t_gray t_mid">Passport # : </span> <span class="t_red t_mid t_bold"> 2345678</span></p>
+						<ul>
+							<li class="pb_15"><span class="pr_5 vt"><img src="img/icon_location.svg" style="width: 14px;"></span> <span>5880 Jefferson Blvd. Floor 2<br>Culver City, CA 90031</span></li>
+							<li class="pb_15"><span class="pr_5 vt"><img src="img/icon_email.svg" style="width: 14px;"></span> <span>amberheard@gmail.com</span></li>
+							<li class="pb_15"><span class="pr_5 vt"><img src="img/icon_phone.svg" style="width: 14px;"></span> <span>123-456-7890</span></li>
+						</ul>
+					</div>
 				</div>
-				</a>
-				<!-- Scan E -->
+				<div class="ws_100 txc p_fixed pf_bottom p_high_9 p_bottom"><button class="bg_red t_white" onClick="location.href='product.html'">Start Order</button></div>
 			</div>
 		</main>
 		<footer></footer>
