@@ -1165,6 +1165,7 @@ input[type="checkbox"]:checked {
   -ms-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   visibility: hidden;
+  height: 0;
 }
 span[id^="icon_"] {
   cursor: pointer;
@@ -1179,6 +1180,7 @@ span[id^="icon_"] {
 .calendar.open, .dropdown.open {
   bottom: 0px;
   visibility: visible;
+  height: auto;
 }
 .no_line select {
   background: transparent !important;
