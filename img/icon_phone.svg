@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_mobile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Returning-Customer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-Home" transform="translate(-152.000000, -467.000000)" fill="#A20000">
+            <g id="Group-6" transform="translate(20.000000, 332.000000)">
+                <g id="Group-5" transform="translate(132.000000, 56.000000)">
+                    <g id="Mobile-#" transform="translate(0.000000, 78.000000)">
+                        <g id="icon_mobile" transform="translate(0.000000, 1.000000)">
+                            <g id="smartphone">
+                                <circle id="Oval" fill-rule="nonzero" cx="6.95930233" cy="10.5406977" r="1"></circle>
+                                <path d="M8.4812441,3.1744186 L5.43736056,3.1744186 C5.26673511,3.1744186 5.12790698,3.3068899 5.12790698,3.46941536 L5.12790698,9.22825906 C5.12790698,9.3909243 5.26664199,9.52325581 5.43736056,9.52325581 L8.4812441,9.52325581 C8.65186955,9.52325581 8.79069767,9.39078452 8.79069767,9.22825906 L8.79069767,3.46941536 C8.79060456,3.30675012 8.65186955,3.1744186 8.4812441,3.1744186 Z" id="Shape" fill-rule="nonzero"></path>
+                                <path d="M6.99981333,0 C3.13396756,0 0,3.13418 0,6.99986 C0,10.86554 3.13396756,14 6.99981333,14 C10.8656591,14 14,10.8657267 14,6.99986 C14,3.13399333 10.8656591,0 6.99981333,0 Z M9.72320482,10.4543133 C9.72320482,10.98902 9.2896686,11.4226 8.7549117,11.4226 L5.24490163,11.4226 C4.7101914,11.4226 4.27660851,10.9890667 4.27660851,10.4543133 L4.27660851,3.51507333 C4.27660851,2.98036667 4.71014473,2.54678667 5.24490163,2.54678667 L8.7549117,2.54678667 C9.28962193,2.54678667 9.72320482,2.98032 9.72320482,3.51507333 L9.72320482,10.4543133 Z" id="Shape" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

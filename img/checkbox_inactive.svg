@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Master-Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Type" transform="translate(-20.000000, -217.000000)" fill="#F4F4F4" stroke="#DDDDDD">
+            <g id="Group-8" transform="translate(20.000000, 215.000000)">
+                <g id="icon_checkbox-unchecked" transform="translate(0.000000, 2.000000)">
+                    <g id="tick">
+                        <rect id="Rectangle" stroke-width="2" x="1" y="1" width="17" height="17" rx="5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

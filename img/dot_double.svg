@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="5px" viewBox="0 0 16 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Master-Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Cancel-Popup" transform="translate(-94.000000, -321.000000)" fill="#FFFFFF">
+            <g id="Loading" transform="translate(0.000000, 235.000000)">
+                <g id="Dot" transform="translate(94.000000, 86.000000)">
+                    <circle id="Oval-5" cx="2.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval-5" cx="13.5" cy="2.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

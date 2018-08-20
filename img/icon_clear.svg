@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_clear</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Master-Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Marketing-Selected" transform="translate(-99.000000, -406.000000)">
+            <g id="Group-8" transform="translate(20.000000, 404.000000)">
+                <g id="icon_clear" transform="translate(79.000000, 2.000000)">
+                    <g id="Group">
+                        <circle id="Oval" fill="#222222" cx="9" cy="9" r="9"></circle>
+                        <path d="M9.71309111,9.00001409 L11.8523116,6.86079105 C12.0492295,6.663873 12.0492295,6.34460659 11.8523116,6.14771671 C11.6553938,5.95079866 11.3361559,5.95079866 11.1392381,6.14771671 L8.99998944,8.28696791 L6.86074074,6.14768854 C6.66382292,5.95077049 6.34458505,5.95077049 6.14766724,6.14768854 C5.95077759,6.34460659 5.95077759,6.663873 6.14766724,6.86076288 L8.28691593,8.99998591 L6.14766724,11.1392371 C5.95077759,11.3361552 5.95077759,11.6554216 6.14766724,11.8523115 C6.34458505,12.0492295 6.66382292,12.0492295 6.86074074,11.8523115 L8.99998944,9.71306026 L11.1392381,11.8523115 C11.3361278,12.0492295 11.6553938,12.0492295 11.8523116,11.8523115 C12.0492295,11.6553934 12.0492295,11.3361552 11.8523116,11.1392371 L9.71309111,9.00001409 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

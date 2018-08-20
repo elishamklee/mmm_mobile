@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="19px" viewBox="0 0 26 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Master-Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Confirmaton-Popup" transform="translate(-174.000000, -296.000000)" fill="#FFB91A" fill-rule="nonzero">
+            <g id="Loading" transform="translate(0.000000, 235.000000)">
+                <g id="Group" transform="translate(0.000000, 61.000000)">
+                    <path d="M199.238424,4.46091343 L185.522349,18.2348205 C184.506657,19.2550598 182.859044,19.2550598 181.84239,18.2348205 L174.762058,11.1236205 C173.745981,10.1033812 173.745981,8.44851246 174.762058,7.42807987 C175.778327,6.40745399 177.425811,6.40745399 178.441631,7.42769329 L183.682915,12.6915096 L195.558273,0.765179505 C196.574542,-0.255446375 198.222154,-0.254673222 199.238039,0.765179505 C200.253923,1.7856121 200.253923,3.43990097 199.238424,4.46091343 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

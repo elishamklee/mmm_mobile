@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>clock-circular-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Order-Time" transform="translate(0.000000, -1.000000)">
+            <g id="Group">
+                <g id="clock-circular-outline" transform="translate(0.000000, 1.000000)">
+                    <circle id="Oval" fill="#7C7C7C" cx="5" cy="5" r="5"></circle>
+                    <path d="M7.38619059,5.26797386 L5.12761882,5.26797386 L5.12761882,2.86601307 C5.12761882,2.66388235 4.94233566,2.5 4.71380941,2.5 C4.48528316,2.5 4.3,2.66388235 4.3,2.86601307 L4.3,5.63398693 C4.3,5.83611765 4.48528316,6 4.71380941,6 L7.38619059,6 C7.61471684,6 7.8,5.83611765 7.8,5.63398693 C7.8,5.43185621 7.61471684,5.26797386 7.38619059,5.26797386 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

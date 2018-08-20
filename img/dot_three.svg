@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="5px" viewBox="0 0 26 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Dot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Dashbaord-Header" transform="translate(-58.000000, -39.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(0.000000, 18.000000)">
+                <g id="Dot" transform="translate(58.000000, 21.000000)">
+                    <circle id="Oval-5" cx="2.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval-5" cx="13.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval-5" cx="23.5" cy="2.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

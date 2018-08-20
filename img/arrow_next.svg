@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile---Master-Registration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CS-Que-History" transform="translate(-346.000000, -154.000000)" fill="#222222" fill-rule="nonzero">
+            <g id="arrow_next" transform="translate(346.000000, 154.000000)">
+                <path d="M6.74814953,6.78205031 L1.46798631,12.0887947 C1.13210415,12.4265421 0.587528803,12.4265421 0.251809706,12.0887947 C-0.0839365686,11.7513478 -0.0839365686,11.2040414 0.251809706,10.8666218 L4.92393898,6.17096386 L0.251945591,1.47546976 C-0.0838006829,1.13788629 -0.0838006829,0.590634502 0.251945591,0.253187604 C0.587691866,-0.0843958679 1.13224004,-0.0843958679 1.4681222,0.253187604 L6.74828541,5.56001398 C6.91615855,5.72881938 7,5.94982333 7,6.17093654 C7,6.39215902 6.91599549,6.61332686 6.74814953,6.78205031 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
