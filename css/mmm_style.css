@@ -652,6 +652,9 @@ div[class*="col_"] {
 .hide, .warning {
   display: none;
 }
+.show {
+  display: inline-block;
+}
 /* Text Code*/
 .txl{
   text-align: left;
@@ -808,6 +811,7 @@ div[class*="col_"] {
 .pb_30 {
   padding-bottom: 30px;
 }
+
 .pt_40 {
   padding: 40px 0 0 0;
 }
@@ -826,7 +830,7 @@ div[class*="col_"] {
 /* Sign In Code                   */
 /*================================*/
 .signin_wrapper {
-  padding-top: 49.5%;
+  padding-top: 44.7%;
 }
 .signin {
   margin-top: 50px;
@@ -841,6 +845,7 @@ div[class*="col_"] {
   margin-bottom: 15px;
   text-indent: 20px;
 }
+
 .signin input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ccc;
   font-size: inherit;
@@ -861,7 +866,7 @@ div[class*="col_"] {
 /* Scan Code                      */
 /*================================*/
 .scan_wrapper {
-  padding-top: 35%;
+  padding-top: 30%;
 }
 .scan {
   width: 146px;
@@ -928,7 +933,7 @@ nav.process {
   border-top: 2px solid #FF5F5F;
   width: 48px;
   left: 25px;
-  top: 12px;
+  top: 11px;
   z-index: 2;
 }
 nav.process:after {
@@ -997,6 +1002,13 @@ nav .circle {
 .label {
   font-size: 10px;
   color:#7C7C7C;
+}
+.label.active {
+  bottom: 20px;
+  position:absolute;
+  bottom: 35px;
+  left:0;
+  z-index: 999;
 }
 .form_icon {
   position: absolute;
@@ -1072,10 +1084,10 @@ input,button,textarea,select {
   position: relative;
   
 }
-input,textarea,select {
+input,select {
   border-bottom: 1px solid #CCCCCC;
   color: #222;
-  height: 40px;
+  height: 35px;
   color: #A20000;
   width: 100%;
   background: #fff;
@@ -1085,12 +1097,19 @@ input,textarea,select {
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
 }
+textarea {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid #CCCCCC;
+  border-radius: 0 0 10px 10px;
+  line-height: 20px;
+}
 .focus input, .focus select {
   border-bottom: 1px solid #A20000;
 }
-.focus .label {
 
-}
 
 .inactive .swipe {
  background: url('../img/swipe_inactive.svg') no-repeat left center;
@@ -1106,14 +1125,14 @@ input,textarea,select {
   height:40px;
 }
 
-input[type="radio"] {
+input[type="radio"], #view_note_detail input[type="checkbox"],  #add_new_note input[type="checkbox"], #view_flag input[type="checkbox"] {
   background: url('../img/swipe_inactive.svg') no-repeat left center;
-  width: 51px;
+  width: 51px !important;
   height: 32px;
   border:0 !important;
 }
 
-input[type="radio"]:checked {
+input[type="radio"]:checked, #view_note_detail input[type="checkbox"]:checked,  #add_new_note input[type="checkbox"]:checked,#view_flag input[type="checkbox"]:checked {
   background: url('../img/swipe_active.svg') no-repeat left center;
   width: 51px;
   height: 32px;
@@ -1153,8 +1172,8 @@ span[id^="icon_"] {
 
 .icon_close img {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
   z-index: 999;
 }
 .calendar.open, .dropdown.open {
@@ -1193,6 +1212,8 @@ table {
   background: rgba(0,0,0,0.7);
   z-index: 9999;
   opacity: 0;
+  left:0;
+  top:0;
   transform: translate(0,0);
   -webkit-transform: translate(0,0);
   -moz-transform: translate(0,0);
@@ -1237,6 +1258,7 @@ table {
   display: table-cell;
   vertical-align: middle;
   position: relative;
+  z-index: 999999999;
 }
 .modal_popup .scan_inside {
   border: 5px solid #FF9F00 !important;
@@ -1275,6 +1297,7 @@ table {
   color: #222;
 }
 .left_slider_close {
+  visibility: hidden;
   width: 15%;
   height: 50px;
   background: #A20000;
@@ -1290,6 +1313,7 @@ table {
   -ms-trnsition: all .25s ease-in-out;
 }
 .left_slider_close.open {
+  visibility: visible;
   right: 0;
   transform: translateY(0%);
   -webkit-transform: translateY(0%);
@@ -1477,11 +1501,11 @@ button.bigsize {
   text-align: center;
   font-size: 11px;
 }
-.search_category.active {
+.search_category.selected {
   border:1px solid #A20000;
   color: #A20000;
 }
-.search_category img.select {
+.search > div > div.selected img.select {
   display: none;
 }
 .search .col_3 > div{
@@ -1523,7 +1547,7 @@ button.bigsize {
 }
 .acc_tag {
   border-radius: 5px;
-  line-height: 200%;
+  line-height: 19px;
   width: 70px;
   height: 20px;
   text-align: center;
@@ -1598,7 +1622,85 @@ span[class^="outline_"] > span {
   border-width: 0 6px 7px 6px;
   border-color: transparent transparent #fff transparent;
 }
-
+/* ============================== */
+/* Dashboard Code                 */
+/*================================*/
+.dashboard.table > div {
+  display: table-cell;
+  height: 100%;
+  vertical-align: bottom;
+  float: none;
+}
+.dashboard div:first-child .dot {
+  top: 40%;
+  right: -20px;
+}
+.dashboard div:last-child .dot {
+  top: 40%;
+  right: auto;
+  left:-20px;
+}
+.profile_name {
+  padding-bottom: 40px;
+}
+.no_pic_name {
+  padding-bottom: 20px;
+}
+.tab_menu {
+  position: absolute;
+  width: 90%;
+  top: -20px;
+  left: 5%;
+  height: 40px;
+  text-align: center;
+  z-index: 999;
+  border-radius: 50px;
+}
+.tab_menu > span {
+  font-size: 12px;
+  line-height: 40px;
+  position: relative;
+}
+.tab_menu > span:nth-child(even){
+  margin:0 15px;
+}
+.tab_menu > span.selected:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #FF9F00;
+  left: 0;
+  height: 3px;
+  border-radius: 50px;
+}
+.round_edge {
+  border-radius: 10px;
+}
+.bg_green {
+  background:#03553F;
+}
+.bg_blue {
+  background:#25559E;
+}
+.id_type {
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin-top: 5px;
+  font-size: 8px;
+}
+.flag {
+  color: #A20000;
+  margin-bottom: 20px;
+}
+.flag .acc_tag {
+  border:1px solid #A20000;
+}
+.note_alert{
+  position: absolute;
+  top: -18px;
+  right: -18px;
+}
 /* ============================== */
 /* POS Code                       */
 /*================================*/
@@ -1668,4 +1770,24 @@ span[class^="outline_"] > span {
 .total td {
   border-top:1px solid #ddd;
   padding-top: 10px;
+}
+.zoom {
+  display: none;
+  opacity: 0;
+}
+.zoom.open {
+  display: block;
+  opacity: 1;
+}
+.zoom.open .table {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9999999;
+}
+.close_zoom {
+  position: absolute;
+  z-index: 9999999999;
+  top: 15px;
+  right: 15px;
 }
